@@ -22,6 +22,7 @@ jobs:
             echo "release_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
           fi
           if [ "${{github.event_name}}" == "push" -o "${{github.event_name}}" == "schedule" -o "${{github.event_name}}" == "workflow_dispatch" ] && [ "${{github.ref}}" == "refs/heads/master" -o "${{github.ref}}" == "refs/heads/main" ]; then
+            # uncomment this line for upload! echo 'upload=bundles' >> $GITHUB_OUTPUT
             echo 'push=true' >> $GITHUB_OUTPUT
             echo 'sim=true' >> $GITHUB_OUTPUT
           else
@@ -33,6 +34,7 @@ jobs:
         with:
           new_tag: ${{steps.set-variables.outputs.release_date}}
           artifacts: bin srec hex list map elf bundle autoupdate
+          # see above about un-commenting
           uploads: ini ${{steps.set-variables.outputs.upload}}
           push: ${{steps.set-variables.outputs.push}}
           run_simulator: ${{ steps.set-variables.outputs.sim }}
