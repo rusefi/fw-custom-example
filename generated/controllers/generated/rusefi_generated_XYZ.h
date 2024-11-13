@@ -351,7 +351,7 @@
 #define ego_sensor_e_ES_PLX 4
 #define EGT_CHANNEL_COUNT 8
 #define END_OF_CALIBRATION_PADDING 116
-#define engine_configuration_s_size 4024
+#define engine_configuration_s_size 4032
 #define engine_load_mode_e_auto_enum 0="LM_SPEED_DENSITY",2="LM_ALPHA_N",3="LM_LUA",100="LM_MOCK",1="LM_REAL_MAF"
 #define engine_load_mode_e_enum "Speed Density", "MAF Air Charge", "Alpha-N", "Lua"
 #define engine_load_mode_e_LM_ALPHA_N 2
@@ -485,7 +485,7 @@
 #define ETB_BIAS_CURVE_LENGTH 8
 #define ETB_COUNT 2
 #define ETB_HW_MAX_FREQUENCY 3000
-#define FLASH_DATA_VERSION 20016
+#define FLASH_DATA_VERSION 20024
 #define FRONTEND_TITLE_BAR_NAME "rusEFI"
 #define fuel_cyl_trim_s_size 16
 #define FUEL_LEVEL_TABLE_COUNT 8
@@ -1167,7 +1167,7 @@
 #define MAIN_HELP_URL "http://www.rusefi.com/"
 #define MAP_ANGLE_SIZE 8
 #define MAP_sensor_config_s_size 140
-#define MAP_UPPER_LIMIT 255
+#define MAP_UPPER_LIMIT 1000
 #define MAP_WINDOW_SIZE 8
 #define MAX_CYLINDER_COUNT 12
 #define MAX_TPS_PPS_DISCREPANCY 5
@@ -1228,7 +1228,7 @@
 #define pedalSensor_NAME "Accelerator pedal"
 #define pedalToTpsTbl_NAME "ETB pedal target"
 #define PERCENT_TRIM_BYTE_PACKING_DIV 0.02
-#define persistent_config_s_size 22968
+#define persistent_config_s_size 22960
 #define pid_s_size 20
 #define pin_input_mode_e_auto_enum 0="PI_DEFAULT",2="PI_PULLDOWN",1="PI_PULLUP"
 #define pin_input_mode_e_enum "DEFAULT", "PULLUP", "PULLDOWN"
@@ -1295,7 +1295,7 @@
 #define SentEtbType_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3189491731
+#define SIGNATURE_HASH 1351942270
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1321,7 +1321,7 @@
 #define STFT_BANK_COUNT 2
 #define stft_cell_cfg_s_size 4
 #define STFT_CELL_COUNT 4
-#define stft_s_size 24
+#define stft_s_size 28
 #define switch_input_pin_e_enum 0="NONE",68="VR/Hall 1 (E2)",69="VR/Hall 2 (E3)",70="VR/Hall 3 (E4)"
 #define switch_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","VR/Hall 1 (E2)","VR/Hall 2 (E3)","VR/Hall 3 (E4)"
 #define TABLE_2_LOAD_SIZE 8
@@ -1357,7 +1357,7 @@
 #define torqueReductionActivationMode_e_enum "Torque Reduction Button", "Launch Button"
 #define torqueReductionActivationMode_e_LAUNCH_BUTTON 1
 #define torqueReductionActivationMode_e_TORQUE_REDUCTION_BUTTON 0
-#define TOTAL_CONFIG_SIZE 22968
+#define TOTAL_CONFIG_SIZE 22960
 #define TPS_2_BYTE_PACKING_MULT 100
 #define TPS_PPS_TOO_HIGH_THRESHOLD 110
 #define TPS_PPS_TOO_LOW_THRESHOLD -10
@@ -1550,7 +1550,7 @@
 #define TS_CRC_CHECK_COMMAND_char k
 #define TS_EXECUTE 'E'
 #define TS_EXECUTE_char E
-#define TS_FILE_VERSION 20240404
+#define TS_FILE_VERSION 20241104
 #define TS_FILE_VERSION_OFFSET 124
 #define TS_GET_COMPOSITE_BUFFER_DONE_DIFFERENTLY '8'
 #define TS_GET_COMPOSITE_BUFFER_DONE_DIFFERENTLY_char 8
@@ -1756,7 +1756,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.11.12.XYZ.3189491731"
+#define TS_SIGNATURE "rusEFI main.2024.11.13.XYZ.1351942270"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
