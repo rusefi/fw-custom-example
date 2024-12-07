@@ -1,1 +1,6 @@
+! example of .ini file templating option
 #define ts_show_etb_pins false
+
+
+! example of table size override
+#define IGN_TRIM_SIZE 8
