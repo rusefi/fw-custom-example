@@ -2,37 +2,37 @@
 #include "board_lookup.h"
 static const LogField fields[] = {
 {packedTime, GAUGE_NAME_TIME, "sec", 0},
-// structureStartingTsPosition 0, skipping bit  at 0@0
-// structureStartingTsPosition 0, skipping bit  at 0@1
-// structureStartingTsPosition 0, skipping bit  at 0@2
-// structureStartingTsPosition 0, skipping bit  at 0@3
-// structureStartingTsPosition 0, skipping bit  at 0@4
-// structureStartingTsPosition 0, skipping bit  at 0@5
-// structureStartingTsPosition 0, skipping bit  at 0@6
-// structureStartingTsPosition 0, skipping bit  at 0@7
-// structureStartingTsPosition 0, skipping bit  at 0@8
-// structureStartingTsPosition 0, skipping bit  at 0@9
-// structureStartingTsPosition 0, skipping bit  at 0@10
-// structureStartingTsPosition 0, skipping bit  at 0@11
-// structureStartingTsPosition 0, skipping bit  at 0@12
-// structureStartingTsPosition 0, skipping bit  at 0@13
-// structureStartingTsPosition 0, skipping bit  at 0@14
-// structureStartingTsPosition 0, skipping bit  at 0@15
-// structureStartingTsPosition 0, skipping bit  at 0@16
-// structureStartingTsPosition 0, skipping bit  at 0@17
-// structureStartingTsPosition 0, skipping bit  at 0@18
-// structureStartingTsPosition 0, skipping bit  at 0@19
-// structureStartingTsPosition 0, skipping bit  at 0@20
-// structureStartingTsPosition 0, skipping bit  at 0@21
-// structureStartingTsPosition 0, skipping bit  at 0@22
-// structureStartingTsPosition 0, skipping bit  at 0@23
-// structureStartingTsPosition 0, skipping bit  at 0@24
-// structureStartingTsPosition 0, skipping bit  at 0@25
-// structureStartingTsPosition 0, skipping bit  at 0@26
-// structureStartingTsPosition 0, skipping bit  at 0@27
-// structureStartingTsPosition 0, skipping bit  at 0@28
-// structureStartingTsPosition 0, skipping bit  at 0@29
-// structureStartingTsPosition 0, skipping bit  at 0@30
+	{engine->outputChannels, 0, 0, "SD: Present", ""},
+	{engine->outputChannels, 0, 1, "SD: Logging", ""},
+	{engine->outputChannels, 0, 2, "triggerScopeReady", ""},
+	{engine->outputChannels, 0, 3, "antilagTriggered", ""},
+	{engine->outputChannels, 0, 4, "Radiator Fan", ""},
+	{engine->outputChannels, 0, 5, "isO2HeaterOn", ""},
+	{engine->outputChannels, 0, 6, "checkEngine", ""},
+	{engine->outputChannels, 0, 7, "needBurn", ""},
+	{engine->outputChannels, 0, 8, "SD: MSD", ""},
+	{engine->outputChannels, 0, 9, "Radiator Fan 2", ""},
+	{engine->outputChannels, 0, 10, "Tooth Logger Ready", ""},
+	{engine->outputChannels, 0, 11, "Error: TPS", ""},
+	{engine->outputChannels, 0, 12, "Error: CLT", ""},
+	{engine->outputChannels, 0, 13, "Error: MAP", ""},
+	{engine->outputChannels, 0, 14, "Error: IAT", ""},
+	{engine->outputChannels, 0, 15, "Error: Trigger", ""},
+	{engine->outputChannels, 0, 16, "Error: Active", ""},
+	{engine->outputChannels, 0, 17, "Warning: Active", ""},
+	{engine->outputChannels, 0, 18, "Error: Pedal", ""},
+	{engine->outputChannels, 0, 19, "isKnockChipOk", ""},
+	{engine->outputChannels, 0, 20, "Launch Control Triggered", ""},
+	{engine->outputChannels, 0, 21, "Error: TPS2", ""},
+	{engine->outputChannels, 0, 22, "Injector Fault", ""},
+	{engine->outputChannels, 0, 23, "Ignition Fault", ""},
+	{engine->outputChannels, 0, 24, "isMainRelayOn", ""},
+	{engine->outputChannels, 0, 25, "isUsbConnected", ""},
+	{engine->outputChannels, 0, 26, "dfcoActive", ""},
+	{engine->outputChannels, 0, 27, "SD card writing", ""},
+	{engine->outputChannels, 0, 28, "SD card reading", ""},
+	{engine->outputChannels, 0, 29, "MAP from sensor seems valid", ""},
+	{engine->outputChannels, 0, 30, "triggerPageRefreshFlag", ""},
 	{engine->outputChannels.RPMValue, "RPM", "RPM", 0},
 	{engine->outputChannels.rpmAcceleration, "dRPM", "RPM acceleration/Rate of Change/ROC", 2},
 	{engine->outputChannels.speedToRpmRatio, "Gearbox Ratio", "value", 2},
@@ -301,36 +301,36 @@ static const LogField fields[] = {
 	{engine->outputChannels.targetAfrBlendBias[1], "targetAfrBlendBias 2", "%", 1},
 	{engine->outputChannels.targetAfrBlendOutput[0], "targetAfrBlendOutput 1", "%", 1},
 	{engine->outputChannels.targetAfrBlendOutput[1], "targetAfrBlendOutput 2", "%", 1},
-	{engine->outputChannels.coilState1, "coilState1", "", 0},
-	{engine->outputChannels.coilState2, "coilState2", "", 0},
-// structureStartingTsPosition 0, skipping bit  at 664@0
-// structureStartingTsPosition 0, skipping bit  at 664@1
-// structureStartingTsPosition 0, skipping bit  at 664@2
-// structureStartingTsPosition 0, skipping bit  at 664@3
-// structureStartingTsPosition 0, skipping bit  at 664@4
-// structureStartingTsPosition 0, skipping bit  at 664@5
-// structureStartingTsPosition 0, skipping bit  at 664@6
-// structureStartingTsPosition 0, skipping bit  at 664@7
-// structureStartingTsPosition 0, skipping bit  at 664@8
-// structureStartingTsPosition 0, skipping bit  at 664@9
-	{engine->outputChannels.injectorState1, "injectorState1", "", 0},
-	{engine->outputChannels.injectorState2, "injectorState2", "", 0},
-// structureStartingTsPosition 0, skipping bit  at 672@0
-// structureStartingTsPosition 0, skipping bit  at 672@1
-// structureStartingTsPosition 0, skipping bit  at 672@2
-// structureStartingTsPosition 0, skipping bit  at 672@3
-// structureStartingTsPosition 0, skipping bit  at 672@4
-// structureStartingTsPosition 0, skipping bit  at 672@5
-// structureStartingTsPosition 0, skipping bit  at 672@6
-// structureStartingTsPosition 0, skipping bit  at 672@7
-// structureStartingTsPosition 0, skipping bit  at 672@8
-// structureStartingTsPosition 0, skipping bit  at 672@9
-// structureStartingTsPosition 0, skipping bit  at 672@10
-// structureStartingTsPosition 0, skipping bit  at 672@11
-// structureStartingTsPosition 0, skipping bit  at 672@12
-// structureStartingTsPosition 0, skipping bit  at 672@13
-// structureStartingTsPosition 0, skipping bit  at 672@14
-// structureStartingTsPosition 0, skipping bit  at 672@15
+	{engine->outputChannels, 660, 0, "coilState1", ""},
+	{engine->outputChannels, 660, 1, "coilState2", ""},
+	{engine->outputChannels, 660, 2, "coilState3", ""},
+	{engine->outputChannels, 660, 3, "coilState4", ""},
+	{engine->outputChannels, 660, 4, "coilState5", ""},
+	{engine->outputChannels, 660, 5, "coilState6", ""},
+	{engine->outputChannels, 660, 6, "coilState7", ""},
+	{engine->outputChannels, 660, 7, "coilState8", ""},
+	{engine->outputChannels, 660, 8, "coilState9", ""},
+	{engine->outputChannels, 660, 9, "coilState10", ""},
+	{engine->outputChannels, 660, 10, "coilState11", ""},
+	{engine->outputChannels, 660, 11, "coilState12", ""},
+	{engine->outputChannels, 660, 12, "injectorState1", ""},
+	{engine->outputChannels, 660, 13, "injectorState2", ""},
+	{engine->outputChannels, 660, 14, "injectorState3", ""},
+	{engine->outputChannels, 660, 15, "injectorState4", ""},
+	{engine->outputChannels, 660, 16, "injectorState5", ""},
+	{engine->outputChannels, 660, 17, "injectorState6", ""},
+	{engine->outputChannels, 660, 18, "injectorState7", ""},
+	{engine->outputChannels, 660, 19, "injectorState8", ""},
+	{engine->outputChannels, 660, 20, "injectorState9", ""},
+	{engine->outputChannels, 660, 21, "injectorState10", ""},
+	{engine->outputChannels, 660, 22, "injectorState11", ""},
+	{engine->outputChannels, 660, 23, "injectorState12", ""},
+	{engine->outputChannels, 660, 24, "triggerChannel1", ""},
+	{engine->outputChannels, 660, 25, "triggerChannel2", ""},
+	{engine->outputChannels, 660, 26, "bank 1 intake cam input", ""},
+	{engine->outputChannels, 660, 27, "bank 1 exhaust cam input", ""},
+	{engine->outputChannels, 660, 28, "bank 2 intake cam input", ""},
+	{engine->outputChannels, 660, 29, "bank 2 exhaust cam input", ""},
 	{engine->outputChannels.outputRequestPeriod, "outputRequestPeriod", "", 0},
 	{engine->outputChannels.mapFast, "mapFast", "", 0},
 	{engine->outputChannels.luaGauges[0], "Lua: Gauge 1", "value", 3},
@@ -453,7 +453,9 @@ static const LogField fields[] = {
 #if EFI_ENGINE_CONTROL
 	{engine->fuelComputer.idealEngineTorque, "idealEngineTorque", "", 0},
 #endif
-// structureStartingTsPosition 872, skipping bit  at 920@0
+#if EFI_ENGINE_CONTROL
+	{engine->fuelComputer, 48, 0, "injectorHwIssue", ""},
+#endif
 	{engine->ignitionState.baseDwell, "Ignition: base dwell", "ms", 1, "Timing"},
 	{engine->ignitionState.sparkDwell, "Ignition: coil charge time", "ms", 1, "Timing"},
 	{engine->ignitionState.dwellDurationAngle, "Ignition: dwell duration", "deg", 1, "Timing"},
@@ -467,7 +469,7 @@ static const LogField fields[] = {
 	{engine->ignitionState.dwellVoltageCorrection, "Ign: Dwell voltage correction", "", 0},
 	{engine->ignitionState.luaTimingAdd, "Ign: Lua timing add", "deg", 2, "Timing"},
 	{engine->ignitionState.luaTimingMult, "Ign: Lua timing mult", "deg", 2, "Timing"},
-// structureStartingTsPosition 924, skipping bit  at 964@0
+	{engine->ignitionState, 40, 0, "Ign: Lua Spark Skip", ""},
 	{engine->module<KnockController>()->m_knockLevel, "Knock: Current level", "Volts", 2},
 	{engine->module<KnockController>()->m_knockCyl[0], "Knock: Cyl 1", "dBv", 0},
 	{engine->module<KnockController>()->m_knockCyl[1], "Knock: Cyl 2", "dBv", 0},
@@ -505,7 +507,7 @@ static const LogField fields[] = {
 	{engine->module<KnockController>()->m_knockFrequencyStart, "Knock: Start Freq", "Hz", 0},
 	{engine->module<KnockController>()->m_knockFrequencyStep, "Knock: Step Freq", "Hz", 0},
 	{engine->module<KnockController>()->m_knockFuelTrimMultiplier, "Knock: Fuel trim when knock", "multiplier", 0},
-// structureStartingTsPosition 1076, skipping bit  at 1076@0
+	{*engine->module<PrimeController>(), 0, 0, "IsFuelPriming", ""},
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<InjectorModelPrimary>()->m_deadtime, "Fuel: injector lag", "ms", 3},
 #endif
@@ -518,35 +520,93 @@ static const LogField fields[] = {
 #if EFI_LAUNCH_CONTROL
 	{engine->launchController.retardThresholdRpm, "retardThresholdRpm", "", 0},
 #endif
-// structureStartingTsPosition 1148, skipping bit  at 1152@0
-// structureStartingTsPosition 1148, skipping bit  at 1152@1
-// structureStartingTsPosition 1148, skipping bit  at 1152@2
-// structureStartingTsPosition 1148, skipping bit  at 1152@3
-// structureStartingTsPosition 1148, skipping bit  at 1152@4
-// structureStartingTsPosition 1148, skipping bit  at 1152@5
-// structureStartingTsPosition 1148, skipping bit  at 1152@6
-// structureStartingTsPosition 1148, skipping bit  at 1152@7
-// structureStartingTsPosition 1148, skipping bit  at 1152@8
-// structureStartingTsPosition 1148, skipping bit  at 1152@9
-// structureStartingTsPosition 1148, skipping bit  at 1152@10
-// structureStartingTsPosition 1148, skipping bit  at 1152@11
-// structureStartingTsPosition 1156, skipping bit  at 1156@0
-// structureStartingTsPosition 1156, skipping bit  at 1156@1
-// structureStartingTsPosition 1156, skipping bit  at 1156@2
-// structureStartingTsPosition 1156, skipping bit  at 1156@3
-// structureStartingTsPosition 1156, skipping bit  at 1156@4
-// structureStartingTsPosition 1156, skipping bit  at 1156@5
-// structureStartingTsPosition 1172, skipping bit  at 1172@0
-// structureStartingTsPosition 1172, skipping bit  at 1172@1
-// structureStartingTsPosition 1172, skipping bit  at 1172@2
-// structureStartingTsPosition 1172, skipping bit  at 1172@3
-// structureStartingTsPosition 1172, skipping bit  at 1172@4
-// structureStartingTsPosition 1172, skipping bit  at 1172@5
-// structureStartingTsPosition 1172, skipping bit  at 1172@6
-// structureStartingTsPosition 1172, skipping bit  at 1172@7
-// structureStartingTsPosition 1172, skipping bit  at 1172@8
-// structureStartingTsPosition 1172, skipping bit  at 1172@9
-// structureStartingTsPosition 1172, skipping bit  at 1172@10
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 0, "launchActivatePinState", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 1, "isPreLaunchCondition", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 2, "isLaunchCondition", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 3, "isSwitchActivated", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 4, "isClutchActivated", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 5, "isBrakePedalActivated", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 6, "isValidInputPin", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 7, "activateSwitchCondition", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 8, "rpmLaunchCondition", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 9, "rpmPreLaunchCondition", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 10, "speedCondition", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->launchController, 4, 11, "tpsCondition", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->shiftTorqueReductionController, 0, 0, "isTorqueReductionTriggerPinValid", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->shiftTorqueReductionController, 0, 1, "torqueReductionTriggerPinState", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->shiftTorqueReductionController, 0, 2, "isTimeConditionSatisfied", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->shiftTorqueReductionController, 0, 3, "isRpmConditionSatisfied", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->shiftTorqueReductionController, 0, 4, "isAppConditionSatisfied", ""},
+#endif
+#if EFI_LAUNCH_CONTROL
+	{engine->shiftTorqueReductionController, 0, 5, "isFlatShiftConditionSatisfied", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 0, "isTpsInvalid", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 1, "m_shouldResetPid", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 2, "isBelowClosedLoopThreshold", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 3, "isNotClosedLoop", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 4, "isZeroRpm", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 5, "hasInitBoost", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 6, "rpmTooLow", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 7, "tpsTooLow", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 8, "mapTooLow", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 9, "isPlantValid", ""},
+#endif
+#if EFI_BOOST_CONTROL
+	{*engine->module<BoostController>(), 0, 10, "isBoostControlled", ""},
+#endif
 #if EFI_BOOST_CONTROL
 	{engine->module<BoostController>()->luaTargetAdd, "Boost: Lua target add", "v", 1, "Boost Control"},
 #endif
@@ -568,39 +628,71 @@ static const LogField fields[] = {
 #if EFI_BOOST_CONTROL
 	{engine->module<BoostController>()->boostControlTarget, "Boost: Target", "kPa", 1, "Boost Control"},
 #endif
-// structureStartingTsPosition 1208, skipping bit fan1 at 1208@0
-// structureStartingTsPosition 1208, skipping bit fan1 at 1208@1
-// structureStartingTsPosition 1208, skipping bit fan1 at 1208@2
-// structureStartingTsPosition 1208, skipping bit fan1 at 1208@3
-// structureStartingTsPosition 1208, skipping bit fan1 at 1208@4
-// structureStartingTsPosition 1208, skipping bit fan1 at 1208@5
-// structureStartingTsPosition 1208, skipping bit fan1 at 1208@6
-// structureStartingTsPosition 1208, skipping bit fan1 at 1208@7
+#if FULL_SD_LOGS
+	{*engine->module<FanControl1>(), 0, 0, "crankingfan1", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl1>(), 0, 1, "notRunningfan1", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl1>(), 0, 2, "disabledWhileEngineStoppedfan1", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl1>(), 0, 3, "brokenCltfan1", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl1>(), 0, 4, "enabledForAcfan1", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl1>(), 0, 5, "hotfan1", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl1>(), 0, 6, "coldfan1", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl1>(), 0, 7, "disabledBySpeedfan1", ""},
+#endif
 #if FULL_SD_LOGS
 	{engine->module<FanControl1>()->radiatorFanStatus, "radiatorFanStatusfan1", "", 0},
 #endif
-// structureStartingTsPosition 1216, skipping bit fan2 at 1216@0
-// structureStartingTsPosition 1216, skipping bit fan2 at 1216@1
-// structureStartingTsPosition 1216, skipping bit fan2 at 1216@2
-// structureStartingTsPosition 1216, skipping bit fan2 at 1216@3
-// structureStartingTsPosition 1216, skipping bit fan2 at 1216@4
-// structureStartingTsPosition 1216, skipping bit fan2 at 1216@5
-// structureStartingTsPosition 1216, skipping bit fan2 at 1216@6
-// structureStartingTsPosition 1216, skipping bit fan2 at 1216@7
+#if FULL_SD_LOGS
+	{*engine->module<FanControl2>(), 0, 0, "crankingfan2", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl2>(), 0, 1, "notRunningfan2", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl2>(), 0, 2, "disabledWhileEngineStoppedfan2", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl2>(), 0, 3, "brokenCltfan2", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl2>(), 0, 4, "enabledForAcfan2", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl2>(), 0, 5, "hotfan2", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl2>(), 0, 6, "coldfan2", ""},
+#endif
+#if FULL_SD_LOGS
+	{*engine->module<FanControl2>(), 0, 7, "disabledBySpeedfan2", ""},
+#endif
 #if FULL_SD_LOGS
 	{engine->module<FanControl2>()->radiatorFanStatus, "radiatorFanStatusfan2", "", 0},
 #endif
 	{engine->engineState.lua.fuelAdd, "Lua: Fuel add", "g", 3},
 	{engine->engineState.lua.fuelMult, "Lua: Fuel mult", "", 0},
-// structureStartingTsPosition 1232, skipping bit  at 8@0
-// structureStartingTsPosition 1232, skipping bit  at 8@1
-// structureStartingTsPosition 1232, skipping bit  at 8@2
-// structureStartingTsPosition 1232, skipping bit  at 8@3
-// structureStartingTsPosition 1232, skipping bit  at 8@4
-// structureStartingTsPosition 1232, skipping bit  at 8@5
-// structureStartingTsPosition 1232, skipping bit  at 8@6
-// structureStartingTsPosition 1232, skipping bit  at 8@7
-// structureStartingTsPosition 1232, skipping bit  at 8@8
+	{engine->engineState, 8, 0, "lua.clutchUpState", ""},
+	{engine->engineState, 8, 1, "lua.brakePedalState", ""},
+	{engine->engineState, 8, 2, "lua.acRequestState", ""},
+	{engine->engineState, 8, 3, "lua.luaDisableEtb", ""},
+	{engine->engineState, 8, 4, "lua.luaIgnCut", ""},
+	{engine->engineState, 8, 5, "lua.luaFuelCut", ""},
+	{engine->engineState, 8, 6, "lua.clutchDownState", ""},
+	{engine->engineState, 8, 7, "lua.disableDecelerationFuelCutOff", ""},
+	{engine->engineState, 8, 8, "lua.torqueReductionState", ""},
 	{engine->engineState.sd.tCharge, "Air: Charge temperature estimate", "deg C", 1},
 	{engine->engineState.sd.tChargeK, "Air: Charge temperature estimate K", "", 0},
 	{engine->engineState.crankingFuel.coolantTemperatureCoefficient, "Fuel: cranking CLT mult", "", 0},
@@ -610,20 +702,20 @@ static const LogField fields[] = {
 	{engine->engineState.baroCorrection, "Fuel: Barometric pressure mult", "", 0},
 	{engine->engineState.hellenBoardId, "Detected Board ID", "id", 0},
 	{engine->engineState.clutchUpState, "Clutch: up", "", 0},
-	{engine->engineState.clutchDownState, "Clutch: down", "", 0},
 	{engine->engineState.brakePedalState, "Brake switch", "", 0},
 	{engine->engineState.startStopState, "startStopState", "", 0},
 	{engine->engineState.smartChipState, "smartChipState", "", 0},
 	{engine->engineState.smartChipRestartCounter, "smartChipRestartCounter", "", 0},
 	{engine->engineState.smartChipAliveCounter, "smartChipAliveCounter", "", 0},
-// structureStartingTsPosition 1232, skipping bit  at 1284@0
-// structureStartingTsPosition 1232, skipping bit  at 1284@1
-// structureStartingTsPosition 1232, skipping bit  at 1284@2
-// structureStartingTsPosition 1232, skipping bit  at 1284@3
-// structureStartingTsPosition 1232, skipping bit  at 1284@4
-// structureStartingTsPosition 1232, skipping bit  at 1284@5
-// structureStartingTsPosition 1232, skipping bit  at 1284@6
-// structureStartingTsPosition 1232, skipping bit  at 1284@7
+	{engine->engineState, 48, 0, "startStopPhysicalState", ""},
+	{engine->engineState, 48, 1, "Harley ACR Active", ""},
+	{engine->engineState, 48, 2, "acrEngineMovedRecently", ""},
+	{engine->engineState, 48, 3, "heaterControlEnabled", ""},
+	{engine->engineState, 48, 4, "luaDigitalState0", ""},
+	{engine->engineState, 48, 5, "luaDigitalState1", ""},
+	{engine->engineState, 48, 6, "luaDigitalState2", ""},
+	{engine->engineState, 48, 7, "luaDigitalState3", ""},
+	{engine->engineState, 48, 8, "Clutch: down", ""},
 	{engine->engineState.startStopStateToggleCounter, "startStopStateToggleCounter", "", 0},
 	{engine->engineState.luaSoftSparkSkip, "luaSoftSparkSkip", "", 0},
 	{engine->engineState.luaHardSparkSkip, "luaHardSparkSkip", "", 0},
@@ -675,7 +767,9 @@ static const LogField fields[] = {
 #if EFI_SHAFT_POSITION_INPUT
 	{engine->triggerCentral.mapCamPrevToothAngle, "Sync: MAP: prev angle", "deg", 2},
 #endif
-// structureStartingTsPosition 1376, skipping bit  at 1416@0
+#if EFI_SHAFT_POSITION_INPUT
+	{engine->triggerCentral, 40, 0, "isDecodingMapCam", ""},
+#endif
 #if EFI_SHAFT_POSITION_INPUT
 	{engine->triggerCentral.triggerElapsedUs, "triggerElapsedUs", "", 0},
 #endif
@@ -826,23 +920,57 @@ static const LogField fields[] = {
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<IdleController>().unmock().iacByTpsTaper, "idle: iacByTpsTaper portion", "", 0},
 #endif
-// structureStartingTsPosition 1620, skipping bit  at 1640@0
-// structureStartingTsPosition 1620, skipping bit  at 1640@1
-// structureStartingTsPosition 1620, skipping bit  at 1640@2
-// structureStartingTsPosition 1620, skipping bit  at 1640@3
-// structureStartingTsPosition 1620, skipping bit  at 1640@4
-// structureStartingTsPosition 1620, skipping bit  at 1640@5
-// structureStartingTsPosition 1620, skipping bit  at 1640@6
-// structureStartingTsPosition 1620, skipping bit  at 1640@7
-// structureStartingTsPosition 1620, skipping bit  at 1640@8
-// structureStartingTsPosition 1620, skipping bit  at 1640@9
-// structureStartingTsPosition 1620, skipping bit  at 1640@10
-// structureStartingTsPosition 1620, skipping bit  at 1640@11
-// structureStartingTsPosition 1620, skipping bit  at 1640@12
-// structureStartingTsPosition 1620, skipping bit  at 1640@13
-// structureStartingTsPosition 1620, skipping bit  at 1640@14
-// structureStartingTsPosition 1620, skipping bit  at 1640@15
-// structureStartingTsPosition 1620, skipping bit  at 1640@16
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 0, "idle: mightResetPid", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 1, "Idle: shouldResetPid", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 2, "Idle: wasResetPid", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 3, "Idle: mustResetPid", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 4, "Idle: cranking", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 5, "isIacTableForCoasting", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 6, "notIdling", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 7, "Idle: reset", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 8, "Idle: dead zone", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 9, "isBlipping", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 10, "useClosedLoop", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 11, "badTps", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 12, "looksLikeRunning", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 13, "looksLikeCoasting", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 14, "looksLikeCrankToIdle", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 15, "Idle: coasting", ""},
+#endif
+#if EFI_PROD_CODE && EFI_IDLE_CONTROL
+	{engine->module<IdleController>().unmock(), 20, 16, "Idle: Closed loop active", ""},
+#endif
 #if EFI_PROD_CODE && EFI_IDLE_CONTROL
 	{engine->module<IdleController>().unmock().idleTarget, "Idle: Target RPM", "", 0},
 #endif
@@ -882,9 +1010,15 @@ static const LogField fields[] = {
 #if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
 	{getLiveData<electronic_throttle_s>(0)->m_adjustedTarget, "Adjusted targetetb1", "%", 2},
 #endif
-// structureStartingTsPosition 1664, skipping bit etb1 at 1696@0
-// structureStartingTsPosition 1664, skipping bit etb1 at 1696@1
-// structureStartingTsPosition 1664, skipping bit etb1 at 1696@2
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{*getLiveData<electronic_throttle_s>(0), 32, 0, "etbRevLimitActiveetb1", ""},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{*getLiveData<electronic_throttle_s>(0), 32, 1, "jamDetectedetb1", ""},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{*getLiveData<electronic_throttle_s>(0), 32, 2, "validPlantPositionetb1", ""},
+#endif
 #if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
 	{getLiveData<electronic_throttle_s>(0)->etbTpsErrorCounter, "ETB TPS error counteretb1", "count", 0, "ETB more"},
 #endif
@@ -933,9 +1067,15 @@ static const LogField fields[] = {
 #if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
 	{getLiveData<electronic_throttle_s>(1)->m_adjustedTarget, "Adjusted targetetb2", "%", 2},
 #endif
-// structureStartingTsPosition 1712, skipping bit etb2 at 1744@0
-// structureStartingTsPosition 1712, skipping bit etb2 at 1744@1
-// structureStartingTsPosition 1712, skipping bit etb2 at 1744@2
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{*getLiveData<electronic_throttle_s>(1), 32, 0, "etbRevLimitActiveetb2", ""},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{*getLiveData<electronic_throttle_s>(1), 32, 1, "jamDetectedetb2", ""},
+#endif
+#if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
+	{*getLiveData<electronic_throttle_s>(1), 32, 2, "validPlantPositionetb2", ""},
+#endif
 #if EFI_PROD_CODE && EFI_ELECTRONIC_THROTTLE_BODY && FULL_SD_LOGS
 	{getLiveData<electronic_throttle_s>(1)->etbTpsErrorCounter, "ETB TPS error counteretb2", "count", 0, "ETB more"},
 #endif
@@ -962,15 +1102,19 @@ static const LogField fields[] = {
 #endif
 	{engine->dc_motors.dcOutput0, "DC: output0", "%", 2, "ETB more"},
 	{engine->dc_motors.isEnabled0_int, "DC: en0", "%", 2, "ETB more"},
-// structureStartingTsPosition 1784, skipping bit  at 1792@0
+	{engine->dc_motors, 8, 0, "isEnabled0", ""},
 #if EFI_VVT_PID
 	{engine->module<VvtController1>()->vvtTarget, "vvtTarget", "deg", 1},
 #endif
 #if EFI_VVT_PID
 	{engine->module<VvtController1>()->vvtOutput, "vvtOutput", "%", 0},
 #endif
-// structureStartingTsPosition 1808, skipping bit  at 1808@0
-// structureStartingTsPosition 1808, skipping bit  at 1808@1
+#if EFI_SHAFT_POSITION_INPUT
+	{engine->lambdaMonitor, 0, 0, "lambdaCurrentlyGood", ""},
+#endif
+#if EFI_SHAFT_POSITION_INPUT
+	{engine->lambdaMonitor, 0, 1, "lambdaMonitorCut", ""},
+#endif
 #if EFI_SHAFT_POSITION_INPUT
 	{engine->lambdaMonitor.lambdaTimeSinceGood, "lambdaTimeSinceGood", "sec", 2},
 #endif
