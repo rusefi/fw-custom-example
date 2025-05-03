@@ -1,4 +1,4 @@
-BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp \
+include $(BOARD_DIR)/firmware/firmware.mk
 
 
 BOARDINC += $(BOARD_DIR)/generated/controllers/generated
