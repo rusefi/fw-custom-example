@@ -66,7 +66,13 @@ jobs:
 
     - name: Showing Output Folder
       run: ls -l pinouts
-
+    - name: Commit and Push Changes
+      run: |
+       git config --global user.name "roman"
+       git config --global user.email "omio234@yandex.ru"
+       git add pinouts
+       git commit -m "Добавление архива pinouts"
+       git push
     - name: Upload Pinouts
       env:
         pass: ${{ secrets.RUSEFI_SSH_PASS }}
