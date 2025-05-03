@@ -1,0 +1,322 @@
+pins:
+  - pin: 1
+    function: Power GND
+    type: gnd  
+
+  - pin: 2
+    function: Power GND
+    type: gnd
+
+  - pin: 3
+    id: A9
+    function: output
+    class: outputs
+    ts_name: Highside 1
+    type: hs
+    
+  - pin: 4
+    id: D14
+    function: output
+    class: outputs
+    ts_name: Highside 4
+    type: hs
+
+  - pin: 5
+    id: C7
+    function: Ignition cylinder 5
+    class: outputs
+    ts_name: Ign 5
+    type: high_logic
+
+  - pin: 6
+    function: Power 12V_MR
+    type: 12V_MR
+    
+  - pin: 7
+    id: G7
+    function: Ignition cylinder 7
+    class: outputs
+    ts_name: Ign 7
+    type: high_logic
+
+  - pin: 8
+    id: G6
+    function: Ignition cylinder 8
+    class: outputs
+    ts_name: Ign 8
+    type: high_logic
+
+  - pin: 9
+    id: D4
+    function: Ignition cylinder 1
+    class: outputs
+    ts_name: Ign 1
+    type: high_logic
+    color: green
+
+  - pin: 10
+    id: D3
+    function: Ignition cylinder 2
+    class: outputs
+    ts_name: Ign 2
+    type: high_logic
+    color: white
+
+  - pin: 11
+    id: C9
+    function: Ignition cylinder 3
+    class: outputs
+    ts_name: Ign 3
+    type: high_logic
+    color: blue
+    
+  - pin: 12
+    id: C8
+    function: Ignition cylinder 4
+    class: outputs
+    ts_name: Ign 4
+    type: high_logic
+    color: orange/brown
+
+  - pin: 13
+    id: E0
+    function: Lowside output
+    class: outputs
+    ts_name: Lowside 14
+    type: ls
+
+  - pin: 14
+    id: E1
+    class: outputs
+    ts_name: Lowside 15
+    type: ls
+  
+  - pin: 15
+    id: B9
+    class: outputs
+    ts_name: Lowside 13
+    type: ls
+  
+  - pin: 16
+    id: E2
+    class: outputs
+    ts_name: Lowside 16
+    type: ls
+
+  - pin: 17
+    id: G8
+    function: Ignition cylinder 6
+    class: outputs
+    ts_name: Ign 6
+    type: high_logic
+
+  - pin: 18
+    id: G12
+    function: "Injector #5"
+    class: outputs
+    ts_name: ingect 5
+    type: ls
+  
+  - pin: 19
+    id: G13
+    function: "Injector #6"
+    class: outputs
+    ts_name: ingect 6
+    type: ls
+  
+  - pin: 20
+    id: G14
+    function: "Injector #7"
+    class: outputs
+    ts_name: ingect 7
+    type: ls
+  
+  - pin: 21
+    id: B4
+    function: "Injector #8"
+    class: outputs
+    ts_name: ingect 8
+    type: ls
+
+  - pin: 22
+    function: ETB 1 negative
+    type: etb
+    color: white
+
+  - pin: 23
+    function: ETB 1 positive
+    type: etb
+    color: blue
+
+  - pin: 24
+    function: OUT_INJ1_N
+    type: Ingector
+    color: white
+
+  - pin: 25
+    function: OUT_INJ1_P
+    type: Ingector
+    color: white
+        
+  - pin: 26
+    function: OUT_INJ2_N
+    type: Ingector
+    color: white
+    
+  - pin: 27
+    function: OUT_INJ2_P
+    type: Ingector
+    color: white
+        
+  - pin: 28
+    function: OUT_INJ3_N
+    type: Ingector
+    color: white
+      
+  - pin: 29
+    function: OUT_INJ3_P
+    type: Ingector
+    color: white
+
+  - pin: 30
+    function: OUT_INJ4_N
+    type: Ingector
+    color: white
+
+  - pin: 31
+    function: OUT_INJ4_P
+    type: Ingector
+    color: white
+
+  - pin: 32
+    function: OUT_PUMP_N
+    type: Pump
+    color: white
+
+  - pin: 33
+    function: OUT_PUMP_P
+    type: Pump
+    color: white
+
+  - pin: 34
+    function: ETB 2 negative
+    type: etb
+    color: white
+
+  - pin: 35
+    function: ETB 2 positive
+    type: etb
+    color: white
+
+info:
+  title: Proteus
+  name: b35
+  cid: b35
+  image:
+    file: b35.jpg
+  pins:
+    - pin: 1
+      x: 294
+      y: 300
+    - pin: 2
+      x: 398
+      y: 300
+    - pin: 3
+      x: 502
+      y: 300
+    - pin: 4
+      x: 606
+      y: 300
+    - pin: 5
+      x: 710
+      y: 300
+    - pin: 6
+      x: 814
+      y: 300
+    - pin: 7
+      x: 918
+      y: 300
+    - pin: 8
+      x: 1022
+      y: 300
+    - pin: 9
+      x: 1126
+      y: 300
+    - pin: 10
+      x: 1230
+      y: 300
+    - pin: 11
+      x: 1334
+      y: 300
+    - pin: 12
+      x: 1438
+      y: 300
+    - pin: 13
+      x: 346
+      y: 405
+    - pin: 14
+      x: 450
+      y: 405
+    - pin: 15
+      x: 554
+      y: 405
+    - pin: 16
+      x: 658
+      y: 405
+    - pin: 17
+      x: 762
+      y: 405
+    - pin: 18
+      x: 866
+      y: 405
+    - pin: 19
+      x: 970
+      y: 405
+    - pin: 20
+      x: 1074
+      y: 405
+    - pin: 21
+      x: 1178
+      y: 405
+    - pin: 22
+      x: 1282
+      y: 405
+    - pin: 23
+      x: 1386
+      y: 405
+    - pin: 24
+      x: 294
+      y: 510
+    - pin: 25
+      x: 398
+      y: 510
+    - pin: 26
+      x: 502
+      y: 510
+    - pin: 27
+      x: 606
+      y: 510
+    - pin: 28
+      x: 710
+      y: 510
+    - pin: 29
+      x: 814
+      y: 510
+    - pin: 30
+      x: 918
+      y: 510
+    - pin: 31
+      x: 1022
+      y: 510
+    - pin: 32
+      x: 1126
+      y: 510
+    - pin: 33
+      x: 1230
+      y: 510
+    - pin: 34
+      x: 1334
+      y: 510
+    - pin: 35
+      x: 1438
+      y: 510

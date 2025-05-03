@@ -1,0 +1,239 @@
+pins:
+  - pin: 1
+    function: Power 12V_MR
+    type: 12V_MR
+
+  - pin: 2
+    function: Power 12V_MR
+    type: 12V_MR
+
+  - pin: 3
+    function: Power 12V_MR
+    type: 12V_MR
+
+  - pin: 4
+    function: Power GND
+    type: gnd
+
+  - pin: 5
+    function: Power GND
+    type: gnd
+
+  - pin: 6
+    id: [B1, EFI_ADC_9]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Temp 4(Fuel levl) 
+    function: "Analog Thermistor Input #4"
+    type: at
+    
+  - pin: 7
+    id: [C1, EFI_ADC_11]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 2(PPS1)
+    function: "Analog Voltage Input #2 "
+    type: av
+    color: green
+
+  - pin: 8
+    id: [C0, EFI_ADC_10]
+    class: [switch_inputs, analog_inputs]
+    ts_name: Analog Volt 1(PPS2)
+    function: "Analog Voltage Input #1 "
+    type: av
+    color: yellow
+
+  - pin: 9
+    function: Power 12V_IGN
+    type: 12V_IGN  
+
+  - pin: 10
+    id: A8
+    function: output
+    class: outputs
+    ts_name: Highside 2
+    type: hs
+
+  - pin: 11
+    function: CAN-H 1
+    color: blue
+    type: can
+
+  - pin: 12
+    function: CAN-L 1
+    color: blue
+    type: can
+
+  - pin: 13
+    function: Power GND
+    type: gnd
+
+  - pin: 14
+    id: G5
+    function: Starter
+    class: outputs
+    ts_name: Starter
+    type: high_logic
+    color: green
+
+  - pin: 15
+    function: Starter
+    type: high_logic
+
+  - pin: 16
+    id: D15
+    function: output
+    class: outputs
+    ts_name: Highside 3
+    type: hs
+
+  - pin: 17
+    function: CAN-H 2
+    color: blue
+    type: can
+
+  - pin: 18
+    function: CAN-L 2
+    color: blue
+    type: can
+
+  - pin: 19
+    id: B8
+    function: output
+    class: outputs
+    ts_name: pump 2 low
+    type: PUMP
+
+  - pin: 20
+    id: B7
+    function: output
+    class: outputs
+    ts_name: pump 1 low
+    type: PUMP
+
+  - pin: 21
+    function: Power 12V_N
+    type: 12V_N
+    
+  - pin: 22
+    function: Power 12V_N
+    type: 12V_N
+
+  - pin: 23
+    id: [E13, E13]
+    class: [event_inputs, switch_inputs]
+    function: Digital trigger/switch input
+    ts_name: Digital 5(Start button)
+    type: din  
+
+  - pin: PD8
+    id: D8
+    class: outputs
+    ts_name: STM32 PD8
+
+  - pin: PD9
+    id: D9
+    class: outputs
+    ts_name: STM32 PD9
+
+  - pin: PD10
+    id: D10
+    class: outputs
+    ts_name: STM32 PD10
+
+  - pin: PD11
+    id: D11
+    class: outputs
+    ts_name: STM32 PD11
+
+  - pin: PD12
+    id: D12
+    class: outputs
+    ts_name: STM32 PD12
+
+  - pin: PD13
+    id: D13
+    class: outputs
+    ts_name: STM32 PD13
+
+info:
+  title: Cat-GDI
+  name: b23
+  cid: b23
+  image:
+    file: b23.jpg
+  pins:
+    - pin: 1
+      x: 239
+      y: 312
+    - pin: 2
+      x: 343
+      y: 312
+    - pin: 3
+      x: 447
+      y: 312
+    - pin: 4
+      x: 551
+      y: 312
+    - pin: 5
+      x: 655
+      y: 312
+    - pin: 6
+      x: 759
+      y: 312
+    - pin: 7
+      x: 863
+      y: 312
+    - pin: 8
+      x: 967
+      y: 312
+    - pin: 9
+      x: 291
+      y: 412
+    - pin: 10
+      x: 395
+      y: 412
+    - pin: 11
+      x: 499
+      y: 412
+    - pin: 12
+      x: 603
+      y: 412
+    - pin: 13
+      x: 707
+      y: 412
+    - pin: 14
+      x: 811
+      y: 412
+    - pin: 15
+      x: 915
+      y: 412
+    - pin: 16
+      x: 239
+      y: 512
+    - pin: 17
+      x: 343
+      y: 512
+    - pin: 18
+      x: 447
+      y: 512
+    - pin: 19
+      x: 551
+      y: 512
+    - pin: 20
+      x: 655
+      y: 512
+    - pin: 21
+      x: 759
+      y: 512
+    - pin: 22
+      x: 863
+      y: 512
+    - pin: 23
+      x: 967
+      y: 512
+
+
+
+
+
+
