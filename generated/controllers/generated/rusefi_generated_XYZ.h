@@ -411,7 +411,7 @@
 #define ego_sensor_e_ES_PLX 4
 #define egoSettings_NAME "CAN O2 sensors"
 #define EGT_CHANNEL_COUNT 8
-#define engine_configuration_s_size 3928
+#define engine_configuration_s_size 3864
 #define engine_load_mode_e_auto_enum 0="LM_SPEED_DENSITY",2="LM_ALPHA_N",3="LM_LUA",100="LM_MOCK",1="LM_REAL_MAF"
 #define engine_load_mode_e_enum "Speed Density", "MAF Air Charge", "Alpha-N", "Lua"
 #define engine_load_mode_e_LM_ALPHA_N 2
@@ -551,6 +551,7 @@
 #define FLOW_LINEARIZATION_MASS_SIZE 2
 #define FLOW_LINEARIZATION_PRESSURE_SIZE 2
 #define FRONTEND_TITLE_BAR_NAME "rusEFI"
+#define FT_BANK_COUNT 2
 #define fuel_cyl_trim_s_size 16
 #define FUEL_LEVEL_TABLE_COUNT 8
 #define FUEL_LOAD_COUNT 16
@@ -1167,7 +1168,6 @@
 #define GPPWM_NOTE_SIZE 16
 #define GPPWM_RPM_COUNT 8
 #define HD_MENU_NAME "Harley"
-#define HIGH_SPEED_COUNT 32
 #define hpfp_cam_e_auto_enum 0="HPFP_CAM_NONE",2="HPFP_CAM_EX1",4="HPFP_CAM_EX2",1="HPFP_CAM_IN1",3="HPFP_CAM_IN2"
 #define hpfp_cam_e_enum "NONE", "Intake 1", "Exhaust 1", "Intake 2", "Exhaust 2"
 #define hpfp_cam_e_HPFP_CAM_EX1 2
@@ -1270,9 +1270,6 @@
 #define load_override_e_enum "None", "MAP", "TPS", "Acc Pedal", "Cyl Filling %"
 #define LOG_DELIMITER "`"
 #define LOGIC_ANALYZER_CHANNEL_COUNT 4
-#define LTFT_BANK_CONUT 2
-#define LTFT_LOAD_CELL_COUNT 16
-#define LTFT_RPM_CELL_COUNT 16
 #define LUA_ANALOG_INPUT_COUNT 8
 #define LUA_BUTTON_COUNT 4
 #define LUA_DIGITAL_INPUT_COUNT 8
@@ -1370,7 +1367,7 @@
 #define pedalSensor_NAME "Accelerator pedal"
 #define pedalToTpsTbl_NAME "ETB pedal target"
 #define PERCENT_TRIM_BYTE_PACKING_DIV 0.02
-#define persistent_config_s_size 24352
+#define persistent_config_s_size 24288
 #define pid_s_size 20
 #define pin_input_mode_e_auto_enum 0="PI_DEFAULT",4="PI_INVERTED_DEFAULT",6="PI_INVERTED_PULLDOWN",5="PI_INVERTED_PULLUP",2="PI_PULLDOWN",1="PI_PULLUP"
 #define pin_input_mode_e_enum "DEFAULT", "PULLUP", "PULLDOWN", "INVALID", "INVERTED DEFAULT", "INVERTED PULLUP", "INVERTED PULLDOWN"
@@ -1449,7 +1446,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 857495024
+#define SIGNATURE_HASH 2738501700
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1470,7 +1467,6 @@
 #define stepper_num_micro_steps_e_STEPPER_FOURTH 4
 #define stepper_num_micro_steps_e_STEPPER_FULL 0
 #define stepper_num_micro_steps_e_STEPPER_HALF 2
-#define STFT_BANK_COUNT 2
 #define stft_cell_cfg_s_size 4
 #define STFT_CELL_COUNT 4
 #define stft_s_size 28
@@ -1518,7 +1514,7 @@
 #define torqueReductionActivationMode_e_TORQUE_REDUCTION_BUTTON 0
 #define torqueReductionActivationMode_e_TORQUE_REDUCTION_CLUTCH_DOWN_SWITCH 2
 #define torqueReductionActivationMode_e_TORQUE_REDUCTION_CLUTCH_UP_SWITCH 3
-#define TOTAL_CONFIG_SIZE 24352
+#define TOTAL_CONFIG_SIZE 24288
 #define TPS_2_BYTE_PACKING_MULT 100
 #define TPS_PPS_TOO_HIGH_THRESHOLD 110
 #define TPS_PPS_TOO_LOW_THRESHOLD -10
@@ -1775,6 +1771,8 @@
 #define TS_RESPONSE_OVERRUN 0x81
 #define TS_RESPONSE_UNDERRUN 0x80
 #define TS_RESPONSE_UNRECOGNIZED_COMMAND 0x83
+#define TS_SCATTER_OFFSETS_COUNT 128
+#define TS_SCATTER_PAGE_SIZE 256
 #define TS_SET_LOGGER_SWITCH 'l'
 #define TS_SET_LOGGER_SWITCH_char l
 #define ts_show_acr_pins true
@@ -1985,7 +1983,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.06.12.XYZ.857495024"
+#define TS_SIGNATURE "rusEFI main.2025.06.13.XYZ.2738501700"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
