@@ -562,7 +562,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.025071E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250711E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4434,10 +4434,10 @@ end</constant>
         <constant name="throttleInletPressureChannel">"NONE"</constant>
         <constant name="throttlePedalPositionAdcChannel">"NONE"</constant>
         <constant name="throttlePedalPositionSecondAdcChannel">"NONE"</constant>
-        <constant digits="2" name="throttlePedalSecondaryUpVoltage" units="voltage">0.34</constant>
-        <constant digits="2" name="throttlePedalSecondaryWOTVoltage" units="voltage">1.86</constant>
-        <constant digits="2" name="throttlePedalUpVoltage" units="voltage">0.73</constant>
-        <constant digits="2" name="throttlePedalWOTVoltage" units="voltage">4.0</constant>
+        <constant digits="2" name="throttlePedalSecondaryUpVoltage" units="volts">0.34</constant>
+        <constant digits="2" name="throttlePedalSecondaryWOTVoltage" units="volts">1.86</constant>
+        <constant digits="2" name="throttlePedalUpVoltage" units="volts">0.73</constant>
+        <constant digits="2" name="throttlePedalWOTVoltage" units="volts">4.0</constant>
         <constant digits="1" name="timing_offset_cylinder1" units="deg">0.0</constant>
         <constant digits="1" name="timing_offset_cylinder10" units="deg">0.0</constant>
         <constant digits="1" name="timing_offset_cylinder11" units="deg">0.0</constant>
@@ -5279,7 +5279,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20250618" nPages="1" signature="rusEFI main.2025.07.10.xyz.3671686020" version="5.0"/>
+    <versionInfo firmwareInfo="20250618" nPages="1" signature="rusEFI main.2025.07.11.xyz.2295996955" version="5.0"/>
     <bibliography author="rusEFI 20250618" writeDate="date"/>
     <settings/>
     <userComments/>
