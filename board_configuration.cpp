@@ -1,4 +1,5 @@
 #include "pch.h"
+#include "board_overrides.h"
 
 Gpio getCommsLedPin() {
 	return Gpio::Unassigned;
@@ -13,7 +14,7 @@ Gpio getWarningLedPin() {
 }
 
 // board-specific configuration setup
-void setBoardDefaultConfiguration() {
+static void customBoardDefaultConfiguration() {
     // engineConfiguration->injectionPins[0] = Gpio::F13;
     // engineConfiguration->ignitionPins[0] = Gpio::E15;
 
@@ -41,4 +42,8 @@ void setBoardDefaultConfiguration() {
 
 	// Battery sense on PA0
 //	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
+}
+
+void setup_custom_board_overrides() {
+    custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
 }
