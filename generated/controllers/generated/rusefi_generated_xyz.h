@@ -155,14 +155,17 @@
 #define BOARD_IGNITION_ADVANCE_MENU_FROM_FILE 
 #define BOARD_IGNITION_SETTINGS_FROM_FILE 
 #define BOARD_INJECTION_SETTINGS_FROM_FILE 
+#define BOARD_INJECTOR_SETTINGS_FROM_FILE 
 #define BOARD_MENU_FROM_FILE 
 #define BOARD_OPTIONS_FROM_FILE 
 #define BOARD_PANELS_FROM_FILE 
 #define BOARD_PC_VARIABLES_FROM_FILE 
 #define BOARD_POPULAR_VEHICLES_FILE 
+#define BOARD_PRIMING_PULSE_PANEL_FROM_FILE 
 #define BOARD_TABLES_FROM_FILE 
 #define BOARD_VE_FROM_FILE 
 #define BOARD_VE_MENU_FROM_FILE 
+#define BOARD_VIN_FIELD_FROM_FILE 
 #define BOOST_BLEND_COUNT 2
 #define BOOST_CURVE_SIZE 5
 #define BOOST_LOAD_COUNT 8
@@ -1524,7 +1527,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 1312164470
+#define SIGNATURE_HASH 935065504
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1778,6 +1781,9 @@
 #define ts_cic_idle false
 #define ts_command_e_TS_BENCH_CATEGORY 22
 #define ts_command_e_TS_BOARD_ACTION 29
+#define ts_command_e_TS_BOARD_ACTION2 26
+#define ts_command_e_TS_BOARD_ACTION3 27
+#define ts_command_e_TS_BOARD_ACTION4 28
 #define ts_command_e_TS_CLEAR_WARNINGS 17
 #define ts_command_e_TS_COMMAND_1 1
 #define ts_command_e_TS_COMMAND_10 10
@@ -1805,9 +1811,6 @@
 #define ts_command_e_TS_STOP_ENGINE 36
 #define ts_command_e_TS_UNUSED_23 23
 #define ts_command_e_TS_UNUSED_24 24
-#define ts_command_e_TS_UNUSED_26 26
-#define ts_command_e_TS_UNUSED_27 27
-#define ts_command_e_TS_UNUSED_28 28
 #define ts_command_e_TS_WIDEBAND 21
 #define ts_command_e_TS_WIDEBAND_FLASH_BY_ID 35
 #define ts_command_e_TS_WIDEBAND_PING_BY_ID 34
@@ -2088,7 +2091,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.09.29.xyz.1312164470"
+#define TS_SIGNATURE "rusEFI main.2025.09.30.xyz.935065504"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
