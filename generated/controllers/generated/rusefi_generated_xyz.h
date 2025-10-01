@@ -80,7 +80,9 @@
 #define air_pressure_sensor_type_e_MT_MPXH6400 14
 #define air_pressure_sensor_type_e_MT_SUBY_DENSO 5
 #define air_pressure_sensor_type_e_MT_TOYOTA_89420_02010 8
+#define ALS_RPM_SIZE 4
 #define ALS_SIZE 4
+#define ALTERNATOR_VOLTAGE_RPM_SIZE 4
 #define ALTERNATOR_VOLTAGE_TARGET_SIZE 4
 #define antiLagActivationMode_e_ALWAYS_ON_ANTILAG 1
 #define antiLagActivationMode_e_auto_enum 0="SWITCH_INPUT_ANTILAG",1="ALWAYS_ON_ANTILAG",2="LUA_ANTILAG"
@@ -279,6 +281,7 @@
 #define can_wbo_type_e_DISABLED 2
 #define can_wbo_type_e_enum "RusEFI", "AEM X-series", "Disabled/Analog"
 #define can_wbo_type_e_RUSEFI 0
+#define CANBUS_COUNT 2
 #define CanGpioType_auto_enum 0="NONE",1="DRT",2="MS"
 #define CanGpioType_DRT 1
 #define CanGpioType_enum "None", "DRT protocol", "MS protocol"
@@ -1276,6 +1279,7 @@
 #define idle_state_e_RPM_DEAD_ZONE 2
 #define idle_state_e_TPS_THRESHOLD 1
 #define IDLE_VE_SIZE 4
+#define IDLE_VE_SIZE_RPM 4
 #define IGN_BLEND_COUNT 4
 #define ign_cyl_trim_s_size 64
 #define IGN_LOAD_COUNT 16
@@ -1305,6 +1309,7 @@
 #define INJ_PHASE_LOAD_COUNT 16
 #define INJ_PHASE_RPM_COUNT 16
 #define INJ_STAGING_COUNT 6
+#define INJ_STAGING_RPM_SIZE 6
 #define injection_mode_e_auto_enum 0="IM_SIMULTANEOUS",2="IM_BATCH",1="IM_SEQUENTIAL",3="IM_SINGLE_POINT"
 #define injection_mode_e_enum "Simultaneous", "Sequential", "Batch", "Single Point"
 #define injection_mode_e_IM_BATCH 2
@@ -1333,6 +1338,7 @@
 #define INSTANCE_INJECTOR injector
 #define KNOCK_RPM_TABLE_NAME "Engine Knock Threshold RPM Based"
 #define KNOCK_TABLE_SIZE 6
+#define LAM_RPM_SIZE 4
 #define LAM_SIZE 4
 #define launchActivationMode_e_ALWAYS_ACTIVE_LAUNCH 2
 #define launchActivationMode_e_auto_enum 0="SWITCH_INPUT_LAUNCH",2="ALWAYS_ACTIVE_LAUNCH",1="CLUTCH_INPUT_LAUNCH",4="LUA_LAUNCH",3="STOP_INPUT_LAUNCH"
@@ -1527,7 +1533,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 935065504
+#define SIGNATURE_HASH 550073455
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1613,6 +1619,7 @@
 #define TPS_TPS_ACCEL_TABLE 8
 #define TRACTION_CONTROL_ETB_DROP_SLIP_SIZE 6
 #define TRACTION_CONTROL_ETB_DROP_SPEED_SIZE 6
+#define TRAILING_SPARK_RPM_SIZE 4
 #define TRAILING_SPARK_SIZE 4
 #define transmission_controller_e_enum "None", "Simple Transmission", "Generic 4-Speed", "GM 4L6X"
 #define TransmissionControllerMode_auto_enum 0="None",2="Generic4",3="Gm4l6x",1="SimpleTransmissionController"
@@ -2091,7 +2098,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.09.30.xyz.935065504"
+#define TS_SIGNATURE "rusEFI main.2025.10.01.xyz.550073455"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
