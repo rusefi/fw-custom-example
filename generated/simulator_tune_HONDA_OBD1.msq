@@ -561,7 +561,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0260129E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.026013E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4579,6 +4579,7 @@ end</constant>
         <constant name="useLambdaOnInterface">"AFR"</constant>
         <constant name="useLinearCltSensor">"no"</constant>
         <constant name="useLinearIatSensor">"no"</constant>
+        <constant name="useMetricOnInterface">"Metric"</constant>
         <constant name="useNoiselessTriggerDecoder">"no"</constant>
         <constant name="useRawOutputToDriveIdleStepper">"no"</constant>
         <constant name="useRunningMathForCranking">"Fixed"</constant>
@@ -5063,7 +5064,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20260127" nPages="1" signature="rusEFI main.2026.01.29.xyz.3288082058" version="5.0"/>
+    <versionInfo firmwareInfo="20260127" nPages="1" signature="rusEFI main.2026.01.30.xyz.2280512679" version="5.0"/>
     <bibliography author="rusEFI 20260127" writeDate="date"/>
     <settings/>
     <userComments/>
