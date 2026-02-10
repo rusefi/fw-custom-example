@@ -1,0 +1,44 @@
+name: Build Unit Tests
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  push:
+  #  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-firmware:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '11'
+
+      - name: Test Java Compiler
+        shell: bash
+        run: javac -version
+
+      - name: Print Compiler version
+        shell: bash
+        run: gcc -v
+
+      - name: Set Env Variables
+        id: set-env-variables
+        shell: bash
+        run: |
+          : Set Env Variables
+          ABSOLUTE_BOARD_DIR=${{github.workspace}}
+          echo "ABSOLUTE_BOARD_DIR=$ABSOLUTE_BOARD_DIR" >> $GITHUB_ENV
+          echo "META_OUTPUT_ROOT_FOLDER=$(realpath --relative-to=ext/rusefi/firmware generated)/" >> $GITHUB_ENV
+
+      - name: Compile and execute Unit Tests
+        shell: bash
+        run: |
+          : Compile and execute Unit Tests
+          bash bin/compile_and_run_unit_tests.sh    
