@@ -1,8 +1,4 @@
 pins:
-  - id: B14
-    class: outputs
-    ts_name: B14 Output
-
   - id: EFI_ADC_0
     class: analog_inputs
     ts_name: MAP (PA0)
