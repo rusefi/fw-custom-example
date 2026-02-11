@@ -23,7 +23,7 @@ jobs:
           EOM
           export COMMIT_MESSAGE
           bash firmware/bin/generate_matrix.sh ../../../boards
-#          echo "matrix=$(bash firmware/bin/generate_matrix.sh config/boards)" >> $GITHUB_OUTPUT
+          echo "matrix=$(bash firmware/bin/generate_matrix.sh ../../../boards)" >> $GITHUB_OUTPUT
 
   build-firmware:
     runs-on: ubuntu-latest
