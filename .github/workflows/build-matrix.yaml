@@ -1,3 +1,5 @@
+name: Firmware Matrix Build
+
 on:
   push:
   pull_request:
@@ -38,6 +40,25 @@ jobs:
 
     steps:
       - name: Set Build Env Variables
-        working-directory: ./firmware/
         run: |
           echo ${{matrix.meta-info}}
+
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Set run variables
+        id: set-variables
+        run: |
+          if [ "${{github.event_name}}" = "schedule" ]; then
+            echo "release_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+          fi
+          if [ "${{github.event_name}}" == "push" -o "${{github.event_name}}" == "schedule" -o "${{github.event_name}}" == "workflow_dispatch" ] && [ "${{github.ref}}" == "refs/heads/master" -o "${{github.ref}}" == "refs/heads/main" ]; then
+            echo 'extra_makefile_targets=build_both_bundles' >> $GITHUB_OUTPUT
+            # uncomment this line for upload! echo 'upload=ftp_upload_bundles' >> $GITHUB_OUTPUT
+            echo 'push=true' >> $GITHUB_OUTPUT
+            echo 'sim=true' >> $GITHUB_OUTPUT
+          else
+            echo 'push=false' >> $GITHUB_OUTPUT
+            echo 'sim=false' >> $GITHUB_OUTPUT
+          fi
