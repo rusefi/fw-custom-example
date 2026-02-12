@@ -39,11 +39,6 @@ jobs:
       matrix: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
 
     steps:
-      - name: Set Build Env Variables
-        run: |
-          echo ${{matrix.meta-info}}
-          echo MATRIX_META_PATH=${{matrix.meta-info}} >> $GITHUB_ENV
-
       - uses: actions/checkout@v6
         with:
           submodules: true
@@ -51,6 +46,8 @@ jobs:
       - name: Set run variables
         id: set-variables
         run: |
+          echo ${{matrix.meta-info}}
+          echo MATRIX_META_PATH=${{matrix.meta-info}} >> $GITHUB_OUTPUT
           if [ "${{github.event_name}}" = "schedule" ]; then
             echo "release_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
           fi
@@ -68,6 +65,7 @@ jobs:
       - uses: ./ext/rusefi/.github/workflows/custom-board-build
         with:
           meta_info: ${{steps.set-variables.outputs.MATRIX_META_PATH}}
+          # bug? feature? 'release_date' above is $GITHUB_ENV not $GITHUB_OUTPUT
           new_tag: ${{steps.set-variables.outputs.release_date}}
           artifacts: bin srec hex list map elf bundle autoupdate
           # see above about un-commenting
