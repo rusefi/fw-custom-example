@@ -16,7 +16,6 @@ jobs:
 
       - name: Set matrix
         id: set-matrix
-        working-directory: ext/rusefi
         run: |
           export EVENT_NAME="${{github.event_name}}"
           export RUN_ATTEMPT="${{github.run_attempt}}"
@@ -24,8 +23,8 @@ jobs:
           ${{ github.event.head_commit.message }}
           EOM
           export COMMIT_MESSAGE
-          bash firmware/bin/generate_matrix.sh ../../../boards
-          echo "matrix=$(bash firmware/bin/generate_matrix.sh ../../../boards)" >> $GITHUB_OUTPUT
+          bash ext/rusefi/firmware/bin/generate_matrix.sh boards
+          echo "matrix=$(bash ext/rusefi/firmware/bin/generate_matrix.sh boards)" >> $GITHUB_OUTPUT
 
   build-firmware:
     runs-on: ubuntu-latest
@@ -47,9 +46,7 @@ jobs:
         id: set-variables
         run: |
           echo ${{matrix.meta-info}}
-          ORIGINAL_MATRIX_META_PATH="${{ matrix.meta-info }}"
-          TRIMMED_PATH="${ORIGINAL_MATRIX_META_PATH#../}"
-          echo MATRIX_META_PATH=${TRIMMED_PATH} >> $GITHUB_OUTPUT
+          echo MATRIX_META_PATH=${{matrix.meta-info}} >> $GITHUB_OUTPUT
           if [ "${{github.event_name}}" = "schedule" ]; then
             echo "release_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
           fi
