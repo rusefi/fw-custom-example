@@ -47,7 +47,9 @@ jobs:
         id: set-variables
         run: |
           echo ${{matrix.meta-info}}
-          echo MATRIX_META_PATH=${{matrix.meta-info}} >> $GITHUB_OUTPUT
+          ORIGINAL_MATRIX_META_PATH="${{ matrix.meta-info }}"
+          TRIMMED_PATH="${ORIGINAL_MATRIX_META_PATH#../}"
+          echo MATRIX_META_PATH=${TRIMMED_PATH} >> $GITHUB_OUTPUT
           if [ "${{github.event_name}}" = "schedule" ]; then
             echo "release_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
           fi
