@@ -3,6 +3,7 @@ name: Firmware Matrix Build
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 jobs:
   generate-matrix:
@@ -60,6 +61,12 @@ jobs:
             echo 'push=false' >> $GITHUB_OUTPUT
             echo 'sim=false' >> $GITHUB_OUTPUT
           fi
+
+#
+# export ABSOLUTE_BOARD_DIR=/home/rusefi/fw-custom-example/boards/board1
+# cd /home/rusefi/fw-custom-example/ext/rusefi
+# export
+
 
       - uses: ./ext/rusefi/.github/workflows/custom-board-build
         with:
