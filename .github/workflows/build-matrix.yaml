@@ -55,7 +55,7 @@ jobs:
             echo 'extra_makefile_targets=build_both_bundles' >> $GITHUB_OUTPUT
             # uncomment this line for upload! echo 'upload=ftp_upload_bundles' >> $GITHUB_OUTPUT
             # not pushing from matrix
-            echo 'push=false' >> $GITHUB_OUTPUT
+            echo 'push=true' >> $GITHUB_OUTPUT
             echo 'sim=true' >> $GITHUB_OUTPUT
           else
             echo 'push=false' >> $GITHUB_OUTPUT
