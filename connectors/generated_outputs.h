@@ -4,6 +4,26 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS[] = {
-	Gpio::B14, // B14 Output
-// "B14 Output",
+	Gpio::B8, // INJ14 (PB8)
+	Gpio::B9, // INJ23 (PB9)
+	Gpio::A8, // IGN (PA8)
+	Gpio::B10, // Fuel Pump (PB10)
+	Gpio::A15, // AC Clutch (PA15)
+	Gpio::B0, // IACV (PB0)
+	Gpio::A11, // MIL (PA11)
+	Gpio::B13, // SPI SCK (PB13)
+	Gpio::B14, // SPI MISO (PB14)
+	Gpio::B15, // SPI MOSI (PB15)
+	Gpio::C15, // SD Card CS (PC15)
+// "INJ14 (PB8)",
+// "INJ23 (PB9)",
+// "IGN (PA8)",
+// "Fuel Pump (PB10)",
+// "AC Clutch (PA15)",
+// "IACV (PB0)",
+// "MIL (PA11)",
+// "SPI SCK (PB13)",
+// "SPI MISO (PB14)",
+// "SPI MOSI (PB15)",
+// "SD Card CS (PC15)",
 }
