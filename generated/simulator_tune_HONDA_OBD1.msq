@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <msq xmlns="http://www.msefi.com/:msq">
     <page/>
-    <page number="0" size="24476">
+    <page number="0" size="23884">
         <constant name="accelEnrichmentMode">"MS Adder"</constant>
         <constant name="accelerometerCsPin">"NONE"</constant>
         <constant name="accelerometerCsPinMode">"default"</constant>
@@ -10,7 +10,7 @@
         <constant digits="0" name="acIdleExtraOffset" units="%">15</constant>
         <constant digits="0" name="acIdleRpmTarget" units="RPM">900</constant>
         <constant digits="0" name="acLowRpmLimit" units="RPM">500</constant>
-        <constant name="acPressure_hwChannel">"NONE"</constant>
+        <constant name="acPressure_hwChannel">"Disabled"</constant>
         <constant digits="2" name="acPressure_v1" units="volts">0.0</constant>
         <constant digits="2" name="acPressure_v2" units="volts">5.0</constant>
         <constant digits="2" name="acPressure_value1" units="">0.0</constant>
@@ -26,8 +26,8 @@
         <constant name="acSwitch">"NONE"</constant>
         <constant name="acSwitchMode">"DEFAULT"</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
-        <constant name="afr_hwChannel">"NONE"</constant>
-        <constant name="afr_hwChannel2">"NONE"</constant>
+        <constant name="afr_hwChannel">"Disabled"</constant>
+        <constant name="afr_hwChannel2">"Disabled"</constant>
         <constant name="afr_type">"14Point7"</constant>
         <constant digits="2" name="afr_v1" units="volts">0.0</constant>
         <constant digits="2" name="afr_v2" units="volts">5.0</constant>
@@ -174,7 +174,7 @@
 </constant>
         <constant name="alwaysInstantRpm">"no"</constant>
         <constant name="alwaysWriteSdCard">"no"</constant>
-        <constant name="ambientTempSensor_adcChannel">"NONE"</constant>
+        <constant name="ambientTempSensor_adcChannel">"Disabled"</constant>
         <constant digits="1" name="ambientTempSensor_bias_resistor" units="Ohm">0.0</constant>
         <constant digits="1" name="ambientTempSensor_resistance_1" units="Ohm">0.0</constant>
         <constant digits="1" name="ambientTempSensor_resistance_2" units="Ohm">0.0</constant>
@@ -188,32 +188,32 @@
         <constant name="antiLagEnabled">"disabled"</constant>
         <constant digits="3" name="applyNonlinearBelowPulse" units="ms">0.0</constant>
         <constant name="artificialTestMisfire">"No thank you"</constant>
-        <constant name="auxAnalogInputs1">"NONE"</constant>
-        <constant name="auxAnalogInputs2">"NONE"</constant>
-        <constant name="auxAnalogInputs3">"NONE"</constant>
-        <constant name="auxAnalogInputs4">"NONE"</constant>
-        <constant name="auxAnalogInputs5">"NONE"</constant>
-        <constant name="auxAnalogInputs6">"NONE"</constant>
-        <constant name="auxAnalogInputs7">"NONE"</constant>
-        <constant name="auxAnalogInputs8">"NONE"</constant>
-        <constant name="auxFastSensor1_adcChannel">"NONE"</constant>
+        <constant name="auxAnalogInputs1">"Disabled"</constant>
+        <constant name="auxAnalogInputs2">"Disabled"</constant>
+        <constant name="auxAnalogInputs3">"Disabled"</constant>
+        <constant name="auxAnalogInputs4">"Disabled"</constant>
+        <constant name="auxAnalogInputs5">"Disabled"</constant>
+        <constant name="auxAnalogInputs6">"Disabled"</constant>
+        <constant name="auxAnalogInputs7">"Disabled"</constant>
+        <constant name="auxAnalogInputs8">"Disabled"</constant>
+        <constant name="auxFastSensor1_adcChannel">"Disabled"</constant>
         <constant digits="1" name="auxFrequencyFilter" units="hz">0.0</constant>
-        <constant name="auxLinear1_hwChannel">"NONE"</constant>
+        <constant name="auxLinear1_hwChannel">"Disabled"</constant>
         <constant digits="2" name="auxLinear1_v1" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear1_v2" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear1_value1" units="">0.0</constant>
         <constant digits="2" name="auxLinear1_value2" units="">0.0</constant>
-        <constant name="auxLinear2_hwChannel">"NONE"</constant>
+        <constant name="auxLinear2_hwChannel">"Disabled"</constant>
         <constant digits="2" name="auxLinear2_v1" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear2_v2" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear2_value1" units="">0.0</constant>
         <constant digits="2" name="auxLinear2_value2" units="">0.0</constant>
-        <constant name="auxLinear3_hwChannel">"NONE"</constant>
+        <constant name="auxLinear3_hwChannel">"Disabled"</constant>
         <constant digits="2" name="auxLinear3_v1" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear3_v2" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear3_value1" units="">0.0</constant>
         <constant digits="2" name="auxLinear3_value2" units="">0.0</constant>
-        <constant name="auxLinear4_hwChannel">"NONE"</constant>
+        <constant name="auxLinear4_hwChannel">"Disabled"</constant>
         <constant digits="2" name="auxLinear4_v1" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear4_v2" units="volts">0.0</constant>
         <constant digits="2" name="auxLinear4_value1" units="">0.0</constant>
@@ -235,7 +235,7 @@
         <constant digits="0" name="auxSpeed1Multiplier" units="">1</constant>
         <constant name="auxSpeedSensorInputPin1">"NONE"</constant>
         <constant name="auxSpeedSensorInputPin2">"NONE"</constant>
-        <constant name="auxTempSensor1_adcChannel">"NONE"</constant>
+        <constant name="auxTempSensor1_adcChannel">"Disabled"</constant>
         <constant digits="1" name="auxTempSensor1_bias_resistor" units="Ohm">0.0</constant>
         <constant digits="1" name="auxTempSensor1_resistance_1" units="Ohm">0.0</constant>
         <constant digits="1" name="auxTempSensor1_resistance_2" units="Ohm">0.0</constant>
@@ -243,7 +243,7 @@
         <constant digits="1" name="auxTempSensor1_tempC_1" units="*C">0.0</constant>
         <constant digits="1" name="auxTempSensor1_tempC_2" units="*C">0.0</constant>
         <constant digits="1" name="auxTempSensor1_tempC_3" units="*C">0.0</constant>
-        <constant name="auxTempSensor2_adcChannel">"NONE"</constant>
+        <constant name="auxTempSensor2_adcChannel">"Disabled"</constant>
         <constant digits="1" name="auxTempSensor2_bias_resistor" units="Ohm">0.0</constant>
         <constant digits="1" name="auxTempSensor2_resistance_1" units="Ohm">0.0</constant>
         <constant digits="1" name="auxTempSensor2_resistance_2" units="Ohm">0.0</constant>
@@ -272,7 +272,7 @@
          1.0 1.0 1.0 1.0
 </constant>
         <constant digits="2" name="baroSensor_highValue" units="{bitStringValue(pressureUnitsLabels, useMetricOnInterface)}">500.0</constant>
-        <constant name="baroSensor_hwChannel">"NONE"</constant>
+        <constant name="baroSensor_hwChannel">"Disabled"</constant>
         <constant digits="2" name="baroSensor_lowValue" units="{bitStringValue(pressureUnitsLabels, useMetricOnInterface)}">0.0</constant>
         <constant name="baroSensor_type">"Custom"</constant>
         <constant digits="0" name="benchTestCount" units="">3</constant>
@@ -609,7 +609,7 @@
         <constant digits="2" name="cel_map_min_v" units="V">0.0</constant>
         <constant digits="2" name="cel_tps_max_v" units="V">0.0</constant>
         <constant digits="2" name="cel_tps_min_v" units="V">0.0</constant>
-        <constant name="clt_adcChannel">"NONE"</constant>
+        <constant name="clt_adcChannel">"Disabled"</constant>
         <constant digits="1" name="clt_bias_resistor" units="Ohm">1500.0</constant>
         <constant digits="1" name="clt_resistance_1" units="Ohm">9500.0</constant>
         <constant digits="1" name="clt_resistance_2" units="Ohm">2100.0</constant>
@@ -778,8 +778,8 @@
         <constant digits="0" name="coastingFuelCutVssLow" units="{bitStringValue(velocityUnitsLabels, useMetricOnInterface)}">0</constant>
         <constant name="complexWallModel">"Basic (constants)"</constant>
         <constant digits="1" name="compressionRatio" units="CR">9.0</constant>
-        <constant name="compressorDischargePressureChannel">"NONE"</constant>
-        <constant name="compressorDischargeTemperature_adcChannel">"NONE"</constant>
+        <constant name="compressorDischargePressureChannel">"Disabled"</constant>
+        <constant name="compressorDischargeTemperature_adcChannel">"Disabled"</constant>
         <constant digits="1" name="compressorDischargeTemperature_bias_resistor" units="Ohm">0.0</constant>
         <constant digits="1" name="compressorDischargeTemperature_resistance_1" units="Ohm">0.0</constant>
         <constant digits="1" name="compressorDischargeTemperature_resistance_2" units="Ohm">0.0</constant>
@@ -1105,7 +1105,7 @@
 </constant>
         <constant digits="2" name="fuelLevelHighThresholdVoltage" units="v">4.5</constant>
         <constant digits="2" name="fuelLevelLowThresholdVoltage" units="v">0.25</constant>
-        <constant name="fuelLevelSensor">"NONE"</constant>
+        <constant name="fuelLevelSensor">"Disabled"</constant>
         <constant digits="3" name="fuelLevelUpdatePeriodSec" units="seconds">0.1</constant>
         <constant cols="1" digits="0" name="fuelLevelValues" rows="8" units="%">
          0
@@ -1121,7 +1121,7 @@
         <constant name="fuelPumpPin">"NONE"</constant>
         <constant name="fuelPumpPinMode">"default"</constant>
         <constant digits="0" name="fuelReferencePressure" units="{bitStringValue(pressureUnitsLabels, useMetricOnInterface)}">294</constant>
-        <constant name="fuelTempSensor_adcChannel">"NONE"</constant>
+        <constant name="fuelTempSensor_adcChannel">"Disabled"</constant>
         <constant digits="1" name="fuelTempSensor_bias_resistor" units="Ohm">0.0</constant>
         <constant digits="1" name="fuelTempSensor_resistance_1" units="Ohm">0.0</constant>
         <constant digits="1" name="fuelTempSensor_resistance_2" units="Ohm">0.0</constant>
@@ -1391,7 +1391,7 @@
         <constant name="gpPwmNote2">GPPWM1</constant>
         <constant name="gpPwmNote3">GPPWM2</constant>
         <constant name="gpPwmNote4">GPPWM3</constant>
-        <constant name="highPressureFuel_hwChannel">"NONE"</constant>
+        <constant name="highPressureFuel_hwChannel">"Disabled"</constant>
         <constant digits="2" name="highPressureFuel_v1" units="volts">0.0</constant>
         <constant digits="2" name="highPressureFuel_v2" units="volts">0.0</constant>
         <constant digits="2" name="highPressureFuel_value1" units="">0.0</constant>
@@ -1637,7 +1637,7 @@
          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
          0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 </constant>
-        <constant name="iat_adcChannel">"NONE"</constant>
+        <constant name="iat_adcChannel">"Disabled"</constant>
         <constant digits="1" name="iat_bias_resistor" units="Ohm">0.0</constant>
         <constant digits="1" name="iat_resistance_1" units="Ohm">18000.0</constant>
         <constant digits="1" name="iat_resistance_2" units="Ohm">2100.0</constant>
@@ -1764,7 +1764,7 @@
         <constant digits="0" name="idlePidDeactivationTpsThreshold" units="%">5</constant>
         <constant digits="0" name="idlePidRpmDeadZone" units="RPM">50</constant>
         <constant digits="0" name="idlePidRpmUpperLimit" units="RPM">300</constant>
-        <constant name="idlePositionChannel">"NONE"</constant>
+        <constant name="idlePositionChannel">"Disabled"</constant>
         <constant digits="0" name="idlePositionMax" units="mv">5000</constant>
         <constant digits="0" name="idlePositionMin" units="mv">0</constant>
         <constant name="idleReturnTargetRamp">"no"</constant>
@@ -2069,7 +2069,7 @@
 </constant>
         <constant name="ignitionKeyDigitalPin">"NONE"</constant>
         <constant name="ignitionKeyDigitalPinMode">"DEFAULT"</constant>
-        <constant cols="1" digits="0" name="ignitionLoadBins" rows="16" units="Load">
+        <constant cols="1" digits="0" name="ignitionLoadBins" rows="16" units="{bitStringValue(ignLoadUnitLabels, ignLoadUnitIdxPcv)}">
          21
          27
          33
@@ -2137,148 +2137,92 @@
          10.5 12.1 15.2 18.3 21.5 24.6 27.7 30.8 34.0 35.0 35.0 35.0 35.0 35.0 35.0 35.0
          10.5 12.1 15.2 18.3 21.5 24.6 27.7 30.8 34.0 35.0 35.0 35.0 35.0 35.0 35.0 35.0
 </constant>
-        <constant name="ignKeyAdcChannel">"NONE"</constant>
+        <constant name="ignKeyAdcChannel">"Disabled"</constant>
         <constant digits="0" name="ignKeyAdcDivider" units="">0</constant>
         <constant name="ignOverrideMode">"None"</constant>
-        <constant cols="1" digits="0" name="ignTrimLoadBins" rows="8" units="">
+        <constant cols="1" digits="0" name="ignTrimLoadBins" rows="4" units="">
          20
-         31
-         42
-         54
-         65
-         77
-         88
+         50
+         80
          100
 </constant>
-        <constant cols="1" digits="0" name="ignTrimRpmBins" rows="8" units="rpm">
-         650
-         800
-         1700
-         2600
-         3500
-         4400
-         5300
+        <constant cols="1" digits="0" name="ignTrimRpmBins" rows="4" units="rpm">
+         1000
+         3000
+         5000
          7000
 </constant>
-        <constant cols="8" digits="1" name="ignTrims10_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims10_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims11_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims11_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims12_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims12_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims1_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims1_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims2_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims2_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims3_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims3_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims4_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims4_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims5_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims5_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims6_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims6_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims7_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims7_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims8_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims8_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
-        <constant cols="8" digits="1" name="ignTrims9_table" rows="8" units="">
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-         0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+        <constant cols="4" digits="1" name="ignTrims9_table" rows="4" units="">
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
+         0.0 0.0 0.0 0.0
 </constant>
         <constant name="imuType">"None"</constant>
         <constant digits="0" name="initialIgnitionCutPercent" units="%">0</constant>
@@ -2641,7 +2585,7 @@
         <constant name="logicAnalyzerPins2">"NONE"</constant>
         <constant name="logicAnalyzerPins3">"NONE"</constant>
         <constant name="logicAnalyzerPins4">"NONE"</constant>
-        <constant name="lowPressureFuel_hwChannel">"NONE"</constant>
+        <constant name="lowPressureFuel_hwChannel">"Disabled"</constant>
         <constant digits="2" name="lowPressureFuel_v1" units="volts">0.0</constant>
         <constant digits="2" name="lowPressureFuel_v2" units="volts">5.0</constant>
         <constant digits="2" name="lowPressureFuel_value1" units="">0.0</constant>
@@ -2738,8 +2682,8 @@ end
 
 function onTick()
 end</constant>
-        <constant name="maf2AdcChannel">"NONE"</constant>
-        <constant name="mafAdcChannel">"NONE"</constant>
+        <constant name="maf2AdcChannel">"Disabled"</constant>
+        <constant name="mafAdcChannel">"Disabled"</constant>
         <constant cols="1" digits="2" name="mafDecoding" rows="32" units="kg/hour">
          -34.5
          -6.0
@@ -2855,7 +2799,7 @@ end</constant>
          7000.0
 </constant>
         <constant digits="2" name="map_sensor_highValue" units="{bitStringValue(pressureUnitsLabels, useMetricOnInterface)}">0.0</constant>
-        <constant name="map_sensor_hwChannel">"NONE"</constant>
+        <constant name="map_sensor_hwChannel">"Disabled"</constant>
         <constant digits="2" name="map_sensor_lowValue" units="{bitStringValue(pressureUnitsLabels, useMetricOnInterface)}">0.0</constant>
         <constant name="map_sensor_type">"DENSO183"</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0</constant>
@@ -3067,12 +3011,12 @@ end</constant>
         <constant digits="1" name="noFuelTrimAfterDfcoTime" units="sec">5.0</constant>
         <constant name="o2heaterPin">"NONE"</constant>
         <constant name="o2heaterPinModeTodO">"default"</constant>
-        <constant name="oilPressure_hwChannel">"NONE"</constant>
+        <constant name="oilPressure_hwChannel">"Disabled"</constant>
         <constant digits="2" name="oilPressure_v1" units="volts">0.5</constant>
         <constant digits="2" name="oilPressure_v2" units="volts">4.5</constant>
         <constant digits="2" name="oilPressure_value1" units="">0.0</constant>
         <constant digits="2" name="oilPressure_value2" units="">689.48</constant>
-        <constant name="oilTempSensor_adcChannel">"NONE"</constant>
+        <constant name="oilTempSensor_adcChannel">"Disabled"</constant>
         <constant digits="1" name="oilTempSensor_bias_resistor" units="Ohm">0.0</constant>
         <constant digits="1" name="oilTempSensor_resistance_1" units="Ohm">0.0</constant>
         <constant digits="1" name="oilTempSensor_resistance_2" units="Ohm">0.0</constant>
@@ -3918,12 +3862,12 @@ end</constant>
          0
          0
 </constant>
-        <constant name="tcu_rangeAnalogInput1">"NONE"</constant>
-        <constant name="tcu_rangeAnalogInput2">"NONE"</constant>
-        <constant name="tcu_rangeAnalogInput3">"NONE"</constant>
-        <constant name="tcu_rangeAnalogInput4">"NONE"</constant>
-        <constant name="tcu_rangeAnalogInput5">"NONE"</constant>
-        <constant name="tcu_rangeAnalogInput6">"NONE"</constant>
+        <constant name="tcu_rangeAnalogInput1">"Disabled"</constant>
+        <constant name="tcu_rangeAnalogInput2">"Disabled"</constant>
+        <constant name="tcu_rangeAnalogInput3">"Disabled"</constant>
+        <constant name="tcu_rangeAnalogInput4">"Disabled"</constant>
+        <constant name="tcu_rangeAnalogInput5">"Disabled"</constant>
+        <constant name="tcu_rangeAnalogInput6">"Disabled"</constant>
         <constant cols="1" digits="0" name="tcu_rangeD" rows="6" units="level">
          0
          0
@@ -4211,9 +4155,9 @@ end</constant>
          0.0
          0.0
 </constant>
-        <constant name="throttleInletPressureChannel">"NONE"</constant>
-        <constant name="throttlePedalPositionAdcChannel">"NONE"</constant>
-        <constant name="throttlePedalPositionSecondAdcChannel">"NONE"</constant>
+        <constant name="throttleInletPressureChannel">"Disabled"</constant>
+        <constant name="throttlePedalPositionAdcChannel">"Disabled"</constant>
+        <constant name="throttlePedalPositionSecondAdcChannel">"Disabled"</constant>
         <constant digits="2" name="throttlePedalSecondaryUpVoltage" units="volts">5.0</constant>
         <constant digits="2" name="throttlePedalSecondaryWOTVoltage" units="volts">0.0</constant>
         <constant digits="2" name="throttlePedalUpVoltage" units="volts">0.0</constant>
@@ -4333,12 +4277,12 @@ end</constant>
          0 0 0 0 0 0
 </constant>
         <constant digits="0" name="totalGearsCount" units="">0</constant>
-        <constant name="tps1_1AdcChannel">"NONE"</constant>
-        <constant name="tps1_2AdcChannel">"NONE"</constant>
+        <constant name="tps1_1AdcChannel">"Disabled"</constant>
+        <constant name="tps1_2AdcChannel">"Disabled"</constant>
         <constant digits="2" name="tps1SecondaryMax" units="V">0.0</constant>
         <constant digits="2" name="tps1SecondaryMin" units="V">5.0</constant>
-        <constant name="tps2_1AdcChannel">"NONE"</constant>
-        <constant name="tps2_2AdcChannel">"NONE"</constant>
+        <constant name="tps2_1AdcChannel">"Disabled"</constant>
+        <constant name="tps2_2AdcChannel">"Disabled"</constant>
         <constant digits="2" name="tps2Max" units="V">5.0</constant>
         <constant digits="2" name="tps2Min" units="V">0.0</constant>
         <constant digits="2" name="tps2SecondaryMax" units="V">0.0</constant>
@@ -4571,7 +4515,7 @@ end</constant>
         <constant name="useTLE8888_cranking_hack">"yes"</constant>
         <constant name="useTLE8888_stepper">"no"</constant>
         <constant name="useVssAsSecondWheelSpeed">"no"</constant>
-        <constant name="vbattAdcChannel">"NONE"</constant>
+        <constant name="vbattAdcChannel">"Disabled"</constant>
         <constant digits="2" name="vbattDividerCoeff" units="coef">5.33</constant>
         <constant cols="1" digits="1" name="veBlends1_blendBins" rows="8" units="">
          0.0
@@ -4782,7 +4726,7 @@ end</constant>
 </constant>
         <constant name="veBlends4_yAxisOverride">"Zero"</constant>
         <constant name="vehicleSpeedSensorInputPin">"NONE"</constant>
-        <constant cols="1" digits="0" name="veLoadBins" rows="16" units="{bitStringValue(fuelUnits, fuelAlgorithm) }">
+        <constant cols="1" digits="0" name="veLoadBins" rows="16" units="{bitStringValue(veLoadUnitLabels, veLoadUnitIdxPcv)}">
          10
          20
          30
@@ -4846,7 +4790,7 @@ end</constant>
          91.1 97.8 100.6 104.9 108.9 112.6 115.3 117.2 117.7 117.2 115.7 113.3 110.5 107.8 105.1 102.5
          94.7 100.9 103.5 107.7 111.8 115.6 118.4 120.3 120.8 120.3 118.7 116.2 113.3 110.5 107.7 105.0
 </constant>
-        <constant name="vRefAdcChannel">"NONE"</constant>
+        <constant name="vRefAdcChannel">"Disabled"</constant>
         <constant name="vrThreshold1_pin">"NONE"</constant>
         <constant cols="1" digits="0" name="vrThreshold1_rpmBins" rows="6" units="rpm">
          650
@@ -4907,7 +4851,7 @@ end</constant>
         <constant digits="1" name="vvtOffsets3" units="value">0.0</constant>
         <constant digits="1" name="vvtOffsets4" units="value">0.0</constant>
         <constant digits="0" name="vvtOutputFrequency" units="Hz">300</constant>
-        <constant name="vvtPins1">"INVALID"</constant>
+        <constant name="vvtPins1">"PA0"</constant>
         <constant name="vvtPins2">"NONE"</constant>
         <constant name="vvtPins3">"NONE"</constant>
         <constant name="vvtPins4">"NONE"</constant>
@@ -4974,7 +4918,7 @@ end</constant>
         <constant digits="0" name="warningPeriod" units="seconds">0</constant>
         <constant digits="2" name="wastegatePositionClosedVoltage" units="v">0.0</constant>
         <constant digits="2" name="wastegatePositionOpenedVoltage" units="v">5.0</constant>
-        <constant name="wastegatePositionSensor">"NONE"</constant>
+        <constant name="wastegatePositionSensor">"Disabled"</constant>
         <constant name="watchOutForLinearTime">"yes"</constant>
         <constant name="widebandOnSecondBus">"CAN1"</constant>
         <constant name="wizardCamTrigger">"no"</constant>
@@ -5048,7 +4992,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20260214" nPages="1" signature="rusEFI main.2026.02.19.xyz.692151647" version="5.0"/>
+    <versionInfo firmwareInfo="20260214" nPages="1" signature="rusEFI main.2026.02.19.board1.1203338896" version="5.0"/>
     <bibliography author="rusEFI 20260214" writeDate="date"/>
     <settings/>
     <userComments/>
