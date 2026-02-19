@@ -10,7 +10,7 @@ Gpio getRunningLedPin() {
 }
 
 Gpio getWarningLedPin() {
-	return Gpio::Unassigned;
+	return Gpio::D13; // MIL / warning LED on PD13 (DevEBox)
 }
 
 // board-specific configuration setup
@@ -55,12 +55,14 @@ static void customBoardDefaultConfiguration() {
     engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
 
     // MAP / CLT / IAT / VBatt – przypisanie do kanałów ADC
-    // STM32F411: PA0..PA7 -> ADC1_IN0..IN7 -> EFI_ADC_0..EFI_ADC_7
-    engineConfiguration->map.sensor.hwChannel = EFI_ADC_0;   // MAP - PA0
-    engineConfiguration->tps1_1AdcChannel    = EFI_ADC_1;    // TPS - PA1
+    // STM32F407 DevEBox:
+    //  PA2..PA7  -> ADC1_IN2..IN7   -> EFI_ADC_2..EFI_ADC_7
+    //  PC0..PC3  -> ADC1_IN10..IN13 -> EFI_ADC_10..EFI_ADC_13
+    engineConfiguration->map.sensor.hwChannel = EFI_ADC_10;  // MAP   - PC0
+    engineConfiguration->tps1_1AdcChannel    = EFI_ADC_11;   // TPS   - PC1
     engineConfiguration->iat.adcChannel      = EFI_ADC_2;    // IAT - PA2
-    engineConfiguration->clt.adcChannel      = EFI_ADC_3;    // ECT - PA3
-    engineConfiguration->vbattAdcChannel     = EFI_ADC_4;    // Bat - PA4
+    engineConfiguration->clt.adcChannel      = EFI_ADC_3;    // ECT   - PA3
+    engineConfiguration->vbattAdcChannel     = EFI_ADC_12;   // VBatt - PC2
 
     // Podstawowe dzielniki (dopasuj do swojego schematu jeśli inne)
 	engineConfiguration->analogInputDividerCoefficient = 1.5f;   // dla MAP/TPS/oil/fuel press na tych dzielnikach

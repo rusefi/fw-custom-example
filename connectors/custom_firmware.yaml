@@ -1,12 +1,5 @@
 pins:
-  - id: EFI_ADC_0
-    class: analog_inputs
-    ts_name: MAP (PA0)
-
-  - id: EFI_ADC_1
-    class: analog_inputs
-    ts_name: TPS (PA1)
-
+  # ADC channels
   - id: EFI_ADC_2
     class: analog_inputs
     ts_name: IAT (PA2)
@@ -17,7 +10,7 @@ pins:
 
   - id: EFI_ADC_4
     class: analog_inputs
-    ts_name: Battery (PA4)
+    ts_name: Oil Pressure (PA4)
 
   - id: EFI_ADC_5
     class: analog_inputs
@@ -31,6 +24,19 @@ pins:
     class: analog_inputs
     ts_name: Oil Temp (PA7)
 
+  - id: EFI_ADC_10
+    class: analog_inputs
+    ts_name: MAP (PC0)
+
+  - id: EFI_ADC_11
+    class: analog_inputs
+    ts_name: TPS (PC1)
+
+  - id: EFI_ADC_12
+    class: analog_inputs
+    ts_name: Battery (PC2)
+
+  # Outputs
   - id: B8
     class: outputs
     ts_name: INJ14 (PB8)
@@ -47,61 +53,46 @@ pins:
     class: outputs
     ts_name: Fuel Pump (PB10)
 
-  - id: A15
+  - id: D12
     class: outputs
-    ts_name: AC Clutch (PA15)
+    ts_name: AC Clutch (PD12)
 
   - id: B0
     class: outputs
     ts_name: IACV (PB0)
 
-  - id: A11
+  - id: D13
     class: outputs
-    ts_name: MIL (PA11)
+    ts_name: MIL (PD13)
 
-  - id: B13
-    class: outputs
-    ts_name: SPI SCK (PB13)
-
-  - id: B14
-    class: outputs
-    ts_name: SPI MISO (PB14)
-
-  - id: B15
-    class: outputs
-    ts_name: SPI MOSI (PB15)
-
-  - id: C15
-    class: outputs
-    ts_name: SD Card CS (PC15)
-
-  - id: B1
+  # Switch / digital inputs
+  - id: D0
     class: switch_inputs
-    ts_name: Starter Switch (PB1)
+    ts_name: Starter Switch (PD0)
 
   - id: B2
     class: switch_inputs
     ts_name: AC Switch (PB2)
 
-  - id: [B3, B3]
+  - id: [D1, D1]
     class: [switch_inputs, event_inputs]
-    ts_name: VSS (PB3)
+    ts_name: VSS (PD1)
 
-  - id: B4
+  - id: D3
     class: switch_inputs
-    ts_name: ALTF (PB4)
+    ts_name: ALTF (PD3)
 
-  - id: B5
+  - id: D4
     class: switch_inputs
-    ts_name: BKSW (PB5)
+    ts_name: BKSW (PD4)
 
   - id: C13
     class: switch_inputs
     ts_name: Clutch Switch (PC13)
 
-  - id: C14
+  - id: D5
     class: switch_inputs
-    ts_name: Table Switch (PC14)
+    ts_name: Table Switch (PD5)
 
   - id: [B12, B12]
     class: [switch_inputs, event_inputs]
