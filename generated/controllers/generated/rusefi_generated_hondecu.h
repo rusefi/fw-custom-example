@@ -58,8 +58,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",7="AFR (PA6)",5="Battery (PA4)",4="ECT (PA3)",6="Fuel Pressure (PA5)",3="IAT (PA2)",1="MAP (PA0)",8="Oil Temp (PA7)",2="TPS (PA1)"
-#define adc_channel_e_fullenum "NONE","MAP (PA0)","TPS (PA1)","IAT (PA2)","ECT (PA3)","Battery (PA4)","Fuel Pressure (PA5)","AFR (PA6)","Oil Temp (PA7)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID"
+#define adc_channel_e_enum 0="NONE",7="AFR (PA6)",13="Battery (PC2)",4="ECT (PA3)",6="Fuel Pressure (PA5)",3="IAT (PA2)",11="MAP (PC0)",5="Oil Pressure (PA4)",8="Oil Temp (PA7)",12="TPS (PC1)"
+#define adc_channel_e_fullenum "NONE","INVALID","INVALID","IAT (PA2)","ECT (PA3)","Oil Pressure (PA4)","Fuel Pressure (PA5)","AFR (PA6)","Oil Temp (PA7)","INVALID","INVALID","MAP (PC0)","TPS (PC1)","Battery (PC2)","INVALID","INVALID"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -177,8 +177,8 @@
 #define boostType_e_auto_enum 0="OPEN_LOOP",1="CLOSED_LOOP"
 #define boostType_e_CLOSED_LOOP 1
 #define boostType_e_OPEN_LOOP 0
-#define brain_input_pin_e_enum 0="NONE",30="TDC Trigger (PB12)",21="VSS (PB3)"
-#define brain_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","VSS (PB3)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","TDC Trigger (PB12)","INVALID"
+#define brain_input_pin_e_enum 0="NONE",30="TDC Trigger (PB12)",51="VSS (PD1)"
+#define brain_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","TDC Trigger (PB12)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","VSS (PD1)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID"
 #define brain_pin_diag_e_PIN_DRIVER_OFF 0x20
 #define brain_pin_diag_e_PIN_DRIVER_OVERTEMP 0x10
 #define brain_pin_diag_e_PIN_OK 0
@@ -1441,8 +1441,8 @@
 #define operation_mode_e_FOUR_STROKE_TWELVE_TIMES_CRANK_SENSOR 6
 #define operation_mode_e_OM_NONE 0
 #define operation_mode_e_TWO_STROKE 3
-#define output_pin_e_enum 0="NONE",17="AC Clutch (PA15)",28="Fuel Pump (PB10)",18="IACV (PB0)",10="IGN (PA8)",26="INJ14 (PB8)",27="INJ23 (PB9)",13="MIL (PA11)",49="SD Card CS (PC15)",32="SPI MISO (PB14)",33="SPI MOSI (PB15)",31="SPI SCK (PB13)"
-#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","IGN (PA8)","INVALID","INVALID","MIL (PA11)","INVALID","INVALID","INVALID","AC Clutch (PA15)","IACV (PB0)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INJ14 (PB8)","INJ23 (PB9)","Fuel Pump (PB10)","INVALID","INVALID","SPI SCK (PB13)","SPI MISO (PB14)","SPI MOSI (PB15)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","SD Card CS (PC15)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID"
+#define output_pin_e_enum 0="NONE",62="AC Clutch (PD12)",28="Fuel Pump (PB10)",18="IACV (PB0)",10="IGN (PA8)",26="INJ14 (PB8)",27="INJ23 (PB9)",63="MIL (PD13)"
+#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","IGN (PA8)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","IACV (PB0)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INJ14 (PB8)","INJ23 (PB9)","Fuel Pump (PB10)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","AC Clutch (PD12)","MIL (PD13)"
 #define PACK_ADD_TEMPERATURE 40
 #define PACK_MULT_AFR 1000
 #define PACK_MULT_AFR_CFG 10
@@ -1557,7 +1557,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 68283209
+#define SIGNATURE_HASH 3718516143
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1591,8 +1591,8 @@
 #define stft_state_e_stftDisabledTpsAccel 8
 #define stft_state_e_stftDisabledTuning 2
 #define stft_state_e_stftEnabled 0
-#define switch_input_pin_e_enum 0="NONE",20="AC Switch (PB2)",22="ALTF (PB4)",23="BKSW (PB5)",47="Clutch Switch (PC13)",19="Starter Switch (PB1)",30="TDC Trigger (PB12)",48="Table Switch (PC14)",21="VSS (PB3)"
-#define switch_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Starter Switch (PB1)","AC Switch (PB2)","VSS (PB3)","ALTF (PB4)","BKSW (PB5)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","TDC Trigger (PB12)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Clutch Switch (PC13)","Table Switch (PC14)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID"
+#define switch_input_pin_e_enum 0="NONE",20="AC Switch (PB2)",53="ALTF (PD3)",54="BKSW (PD4)",47="Clutch Switch (PC13)",50="Starter Switch (PD0)",30="TDC Trigger (PB12)",55="Table Switch (PD5)",51="VSS (PD1)"
+#define switch_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","AC Switch (PB2)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","TDC Trigger (PB12)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Clutch Switch (PC13)","INVALID","INVALID","Starter Switch (PD0)","VSS (PD1)","INVALID","ALTF (PD3)","BKSW (PD4)","Table Switch (PD5)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID"
 #define TABLE_2_LOAD_SIZE 8
 #define TABLE_2_RPM_SIZE 8
 #define TABLE_3_LOAD_SIZE 8
@@ -2153,7 +2153,7 @@
 #define ts_show_wbo_can_menu true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2026.02.19.hondecu.68283209"
+#define TS_SIGNATURE "rusEFI main.2026.02.19.hondecu.3718516143"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
