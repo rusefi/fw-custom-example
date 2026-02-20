@@ -15,11 +15,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Apply SDIO patch for DevEBox F407VGT6
-        run: |
-          cd ext/rusefi
-          git apply ../../sdcard_sdio.patch
-
       - name: Set run variables
         id: set-variables
         run: |
