@@ -19,3 +19,6 @@ DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=FALSE
 
 #see main repo for details on this any many other optional subsystems. We have too many, one has to choose what fits into his choice of stm32
 #DDEFS += -DEFI_ONBOARD_MEMS=TRUE
+
+# Enable SDIO SD card support (DevEBox F407VGT6 has SD card slot)
+# EFI_SDC_DEVICE is defined in board.h as SDCD1
