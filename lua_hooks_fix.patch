@@ -1,0 +1,13 @@
+--- a/firmware/controllers/lua/lua_hooks.cpp
++++ b/firmware/controllers/lua/lua_hooks.cpp
+@@ -16,6 +16,10 @@
+ #include "tinymt32.h" // TL,DR: basic implementation of 'random'
+ #include "signaldebounce.h"
+ 
++// Add missing includes for GPIO and engine scheduler
++#include "io_pins.h"
++#include "engine.h"
++
+ #if EFI_PROD_CODE && HW_HELLEN
+ #include "hellen_meta.h"
+ #endif
