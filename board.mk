@@ -24,6 +24,3 @@ DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=FALSE
 # EFI_SDC_DEVICE is defined in efifeatures.h as SDCD1
 DDEFS += -include $(BOARD_DIR)/efifeatures.h
 DDEFS += -DSTM32_SDC_USE_SDIO1=TRUE
-
-# Disable Lua compilation to avoid API errors
-DDEFS += -DEFI_DISABLE_LUA=TRUE

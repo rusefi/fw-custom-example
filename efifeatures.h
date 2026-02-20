@@ -15,4 +15,7 @@
 // Enable SDIO SD card support
 #define EFI_SDC_DEVICE				SDCD1
 
+// Disable Lua to avoid compilation issues
+#define EFI_LUA					FALSE
+
 #endif /* EFI_FEATURES_H */
