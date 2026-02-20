@@ -74,6 +74,16 @@ static void customBoardDefaultConfiguration() {
 
     // Enable SDIO SD card support
     engineConfiguration->isSdCardEnabled = true;
+    
+    // Configure SDIO GPIO pins for DevEBox F407VGT6
+    // PC8-PC12: SDIO_D0-DIO_D3, SDIO_SCK
+    // PD2: SDIO_CMD
+    efiSetPadMode("SDIO_D0", Gpio::C8, PAL_MODE_ALTERNATE(12));
+    efiSetPadMode("SDIO_D1", Gpio::C9, PAL_MODE_ALTERNATE(12));
+    efiSetPadMode("SDIO_D2", Gpio::C10, PAL_MODE_ALTERNATE(12));
+    efiSetPadMode("SDIO_D3", Gpio::C11, PAL_MODE_ALTERNATE(12));
+    efiSetPadMode("SDIO_SCK", Gpio::C12, PAL_MODE_ALTERNATE(12));
+    efiSetPadMode("SDIO_CMD", Gpio::D2, PAL_MODE_ALTERNATE(12));
 }
 
 void setup_custom_board_overrides() {
