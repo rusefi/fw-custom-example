@@ -9,6 +9,9 @@
 #ifndef EFI_FEATURES_H
 #define EFI_FEATURES_H
 
+// Enable file logging (required for SD card support)
+#define EFI_FILE_LOGGING				TRUE
+
 // Enable SDIO SD card support
 #define EFI_SDC_DEVICE				SDCD1
 
