@@ -15,11 +15,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Apply Lua hooks fix
-        run: |
-          cd ext/rusefi
-          git apply ../../lua_hooks_fix.patch
-
       - name: Set run variables
         id: set-variables
         run: |

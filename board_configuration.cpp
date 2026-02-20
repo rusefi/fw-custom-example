@@ -1,4 +1,6 @@
 #include "pch.h"
+#include "engine.h"
+#include "io_pins.h"
 #include "board_overrides.h"
 
 Gpio getCommsLedPin() {
