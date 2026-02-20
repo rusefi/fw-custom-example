@@ -48,6 +48,9 @@ static void customBoardDefaultConfiguration() {
     // Enable SDIO SD card support
     engineConfiguration->isSdCardEnabled = true;
     engineConfiguration->sdCardCsPin = Gpio::Unassigned;
+    
+    // Disable Lua to avoid compilation issues
+    engineConfiguration->luaEnabled = false;
 }
 
 void setup_custom_board_overrides() {
