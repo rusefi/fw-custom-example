@@ -6,25 +6,21 @@
 // see comments at declaration in pin_repository.h
 const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
-		case Gpio::A11: return "MIL (PA11)";
-		case Gpio::A15: return "AC Clutch (PA15)";
 		case Gpio::A8: return "IGN (PA8)";
 		case Gpio::B0: return "IACV (PB0)";
-		case Gpio::B1: return "Starter Switch (PB1)";
 		case Gpio::B10: return "Fuel Pump (PB10)";
 		case Gpio::B12: return "TDC Trigger (PB12)";
-		case Gpio::B13: return "SPI SCK (PB13)";
-		case Gpio::B14: return "SPI MISO (PB14)";
-		case Gpio::B15: return "SPI MOSI (PB15)";
 		case Gpio::B2: return "AC Switch (PB2)";
-		case Gpio::B3: return "VSS (PB3)";
-		case Gpio::B4: return "ALTF (PB4)";
-		case Gpio::B5: return "BKSW (PB5)";
 		case Gpio::B8: return "INJ14 (PB8)";
 		case Gpio::B9: return "INJ23 (PB9)";
 		case Gpio::C13: return "Clutch Switch (PC13)";
-		case Gpio::C14: return "Table Switch (PC14)";
-		case Gpio::C15: return "SD Card CS (PC15)";
+		case Gpio::D0: return "Starter Switch (PD0)";
+		case Gpio::D1: return "VSS (PD1)";
+		case Gpio::D12: return "AC Clutch (PD12)";
+		case Gpio::D13: return "MIL (PD13)";
+		case Gpio::D3: return "ALTF (PD3)";
+		case Gpio::D4: return "BKSW (PD4)";
+		case Gpio::D5: return "Table Switch (PD5)";
 		default: return nullptr;
 	}
 	return nullptr;
