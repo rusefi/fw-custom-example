@@ -21,6 +21,6 @@ DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=FALSE
 #DDEFS += -DEFI_ONBOARD_MEMS=TRUE
 
 # Enable SDIO SD card support (DevEBox F407VGT6 has SD card slot)
-# Only enable SDIO device and driver - GPIO configuration in board_configuration.cpp
-DDEFS += -DEFI_SDC_DEVICE=SDCD1
+# EFI_SDC_DEVICE is defined in efifeatures.h as SDCD1
+DDEFS += -include $(BOARD_DIR)/efifeatures.h
 DDEFS += -DSTM32_SDC_USE_SDIO1=TRUE
