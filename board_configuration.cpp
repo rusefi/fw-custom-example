@@ -71,6 +71,9 @@ static void customBoardDefaultConfiguration() {
 
     engineConfiguration->clt.config.bias_resistor = 2490;
     engineConfiguration->iat.config.bias_resistor = 2490;
+
+    // Enable SDIO SD card support
+    engineConfiguration->isSdCardEnabled = true;
 }
 
 void setup_custom_board_overrides() {
