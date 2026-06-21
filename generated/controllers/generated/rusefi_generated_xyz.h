@@ -362,11 +362,12 @@
 #define CONSOLE_DATA_PROTOCOL_TAG " @"
 #define CRANKING_ADVANCE_CURVE_SIZE 4
 #define CRANKING_CLT_IDLE_CURVE_SIZE 8
-#define cranking_condition_e_auto_enum 0="CCNONE",1="CC_BRAKE",2="CC_CLUTCH"
+#define cranking_condition_e_auto_enum 0="CCNONE",1="CC_BRAKE",2="CC_CLUTCH",3="CC_CLUTCH_DOWN"
 #define cranking_condition_e_CC_BRAKE 1
 #define cranking_condition_e_CC_CLUTCH 2
+#define cranking_condition_e_CC_CLUTCH_DOWN 3
 #define cranking_condition_e_CCNONE 0
-#define cranking_condition_e_enum "None", "Brake", "Clutch"
+#define cranking_condition_e_enum "None", "Brake", "Clutch Up", "Clutch Down"
 #define CRANKING_CURVE_SIZE 8
 #define CRANKING_CYCLE_CLT_SIZE 4
 #define CRANKING_ENRICH_CLT_COUNT 6
@@ -1320,7 +1321,7 @@
 #define ignition_mode_e_IM_ONE_COIL 0
 #define ignition_mode_e_IM_TWO_COILS 3
 #define ignition_mode_e_IM_WASTED_SPARK 2
-#define IGNITION_OUTPUT "Ignition Output"
+#define IGNITION_OUTPUT "Ignition Cylinder"
 #define imu_type_e_auto_enum 0="IMU_NONE",2="IMU_MM5_10",3="IMU_TYPE_3",4="IMU_TYPE_4",5="IMU_TYPE_MB_A0065422618",1="IMU_VAG"
 #define imu_type_e_IMU_MM5_10 2
 #define imu_type_e_IMU_NONE 0
@@ -1589,7 +1590,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3309061002
+#define SIGNATURE_HASH 2310393238
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -2111,6 +2112,7 @@
 #define ts_show_linear_thermistors true
 #define ts_show_live_data true
 #define ts_show_long_term_fuel_trim false
+#define ts_show_ltft_sd_card_message true
 #define ts_show_maf true
 #define ts_show_main_relay true
 #define ts_show_main_relay_microRusEFI_message false
@@ -2206,7 +2208,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI main.2026.06.20.xyz.3309061002"
+#define TS_SIGNATURE "rusEFI main.2026.06.21.xyz.2310393238"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
