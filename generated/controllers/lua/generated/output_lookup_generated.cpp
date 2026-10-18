@@ -58,9 +58,6 @@ float getOutputValueByHash(const int hash) {
 // isPedalError
 		case -2035612655:
 			return engine->outputChannels.isPedalError;
-// launchTriggered
-		case -52473827:
-			return engine->outputChannels.launchTriggered;
 // isTps2Error
 		case -1529936844:
 			return engine->outputChannels.isTps2Error;
@@ -190,12 +187,6 @@ float getOutputValueByHash(const int hash) {
 // engineMakeCodeNameCrc16
 		case 1726931380:
 			return engine->outputChannels.engineMakeCodeNameCrc16;
-// wallFuelAmount
-		case 115540725:
-			return engine->outputChannels.wallFuelAmount;
-// wallFuelCorrectionValue
-		case -1511514122:
-			return engine->outputChannels.wallFuelCorrectionValue;
 // flexAeMultiplier
 		case -1150933023:
 			return engine->outputChannels.flexAeMultiplier;
@@ -241,9 +232,6 @@ float getOutputValueByHash(const int hash) {
 // tuneCrc16
 		case -1158359776:
 			return engine->outputChannels.tuneCrc16;
-// veValue
-		case 1933507837:
-			return engine->outputChannels.veValue;
 // seconds
 		case -1962923820:
 			return engine->outputChannels.seconds;
@@ -1320,7 +1308,7 @@ float getOutputValueByHash(const int hash) {
 			return engine->engineState.dwellOverChargeCounter;
 // dwellActualRatio
 		case -175046954:
-			return engine->engineState.dwellActualRatio;
+			return (engine->engineState.dwellActualRatio + -1.0f) * 100.0f;
 // dcOutput0
 		case 1242329357:
 			return engine->dc_motors.dcOutput0;
@@ -1382,6 +1370,12 @@ float getOutputValueByHash(const int hash) {
 // injectorHwIssue
 		case -1237512821:
 			return engine->fuelComputer.injectorHwIssue;
+// wallFuelCorrection
+		case -1361470151:
+			return engine->injectionEvents.elements[0].getWallFuel().wallFuelCorrection * 1000.0f;
+// wallFuel
+		case 2095557601:
+			return engine->injectionEvents.elements[0].getWallFuel().wallFuel * 1000.0f;
 // dtAutotuneActive
 		case 408698318:
 			return engine->module<InjectorDeadtimeAutotune>()->dtAutotuneActive;
@@ -1483,19 +1477,19 @@ float getOutputValueByHash(const int hash) {
 			return engine->module<MisfireController>()->misfireTotalCount;
 // misfireEmaUs
 		case 1057331407:
-			return engine->module<MisfireController>()->misfireEmaUs;
+			return engine->module<MisfireController>()->misfireEmaUs * 0.001f;
 // misfireLastSegUs
 		case -1971271249:
-			return engine->module<MisfireController>()->misfireLastSegUs;
+			return engine->module<MisfireController>()->misfireLastSegUs * 0.001f;
 // misfireThreshUs
 		case 1848662122:
-			return engine->module<MisfireController>()->misfireThreshUs;
+			return engine->module<MisfireController>()->misfireThreshUs * 0.001f;
 // misfireWobbleUs
 		case 675334487:
-			return engine->module<MisfireController>()->misfireWobbleUs;
+			return engine->module<MisfireController>()->misfireWobbleUs * 0.001f;
 // misfireWobbleThreshUs
 		case -783525499:
-			return engine->module<MisfireController>()->misfireWobbleThreshUs;
+			return engine->module<MisfireController>()->misfireWobbleThreshUs * 0.001f;
 #endif
 #if EFI_ENGINE_CONTROL && EFI_SHAFT_POSITION_INPUT
 // lambdaCurrentlyGood
