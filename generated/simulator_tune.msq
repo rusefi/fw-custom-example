@@ -591,8 +591,8 @@
          900
          1050
 </constant>
-        <constant digits="0" name="byFirmwareVersion" units="index">20261111</constant>
-        <constant digits="0" name="calibrationBirthday" units="">20261112</constant>
+        <constant digits="0" name="byFirmwareVersion" units="index">20261112</constant>
+        <constant digits="0" name="calibrationBirthday" units="">20261113</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -2363,7 +2363,7 @@
          10.5 12.1 15.2 18.3 21.5 24.6 27.7 30.8 34.0 35.0 35.0 35.0 35.0 35.0 35.0 35.0
 </constant>
         <constant name="ignKeyAdcChannel">"NONE"</constant>
-        <constant digits="0" name="ignKeyAdcDivider" units="">0</constant>
+        <constant digits="2" name="ignKeyAdcDivider" units="coef">0.0</constant>
         <constant name="ignOverrideMode">"None"</constant>
         <constant cols="1" digits="0" name="ignTrimLoadBins" rows="8" units="{bitStringValue(ignLoadUnitLabels, ignLoadUnitIdx)}">
          20
@@ -5596,7 +5596,7 @@
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20261111" nPages="1" signature="rusEFI main.2026.11.12.xyz.3773805647" version="5.0"/>
+    <versionInfo firmwareInfo="20261111" nPages="1" signature="rusEFI main.2026.11.13.xyz.2634859015" version="5.0"/>
     <bibliography author="rusEFI 20261111" writeDate="date"/>
     <settings/>
     <userComments/>
