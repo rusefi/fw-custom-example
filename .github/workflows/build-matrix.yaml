@@ -36,6 +36,14 @@ jobs:
     strategy:
       # Let all builds finish even if one fails early
       fail-fast: false
+      # Serialize the matrix legs. Each board auto-commits its generated configs
+      # and default tune back to the branch, so legs running in parallel race on
+      # `git push` and all but the first are rejected (non-fast-forward / "fetch
+      # first"). Running one board at a time makes those pushes sequential.
+      # Note: this is intentionally not job-level `concurrency` -- with a matrix,
+      # concurrency cancels every pending leg beyond the first, which would break
+      # as soon as a third board is added. max-parallel keeps all legs, in order.
+      max-parallel: 1
       matrix: ${{fromJson(needs.generate-matrix.outputs.matrix)}}
 
     steps:
