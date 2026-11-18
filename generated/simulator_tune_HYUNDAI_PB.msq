@@ -592,7 +592,7 @@
          1050
 </constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">20261117</constant>
+        <constant digits="0" name="calibrationBirthday" units="">20261118</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -5394,7 +5394,7 @@
         <constant digits="1" name="vvtOffsets3" units="value">0.0</constant>
         <constant digits="1" name="vvtOffsets4" units="value">0.0</constant>
         <constant digits="0" name="vvtOutputFrequency" units="Hz">300</constant>
-        <constant name="vvtPins1">"INVALID"</constant>
+        <constant name="vvtPins1">__rusefi_unknown_enum_ordinal_2__</constant>
         <constant name="vvtPins2">"NONE"</constant>
         <constant name="vvtPins3">"NONE"</constant>
         <constant name="vvtPins4">"NONE"</constant>
@@ -5598,8 +5598,8 @@
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20261116" nPages="1" signature="rusEFI main.2026.11.17.xyz.2634859015" version="5.0"/>
-    <bibliography author="rusEFI 20261116" writeDate="date"/>
+    <versionInfo firmwareInfo="20261117" nPages="1" signature="rusEFI main.2026.11.18.xyz.2634859015" version="5.0"/>
+    <bibliography author="rusEFI 20261117" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
