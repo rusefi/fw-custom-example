@@ -38,8 +38,8 @@ jobs:
         info-column: "type"
         colors: |
           {
-          "12v":"yellow";
-          "12V":"yellow";
+          "12v":"yellow",
+          "12V":"yellow",
           "5v":"red",
           "5V":"red",
           "at":"green",
